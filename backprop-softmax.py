@@ -14,12 +14,13 @@ import fnn_utils
 def sigmoid(x):
     return # TODO
 def sigmoid_d(x):
-    return # TODO
+    sigma = sigmoid(x)
+    return sigma*(1-sigma)
 def relu(x):
     return # TODO
 def relu_d(x):
     return # TODO
-       
+
 class BackPropagation:
 
     # The network shape list describes the number of units in each
@@ -50,26 +51,27 @@ class BackPropagation:
         # Choose activation function
         self.phi           = relu
         self.phi_d         = relu_d
-        
+
         # Store activations over the batch for plotting
         self.batch_a       = [np.zeros(m) for m in network_shape]
-                
+
     def forward(self, x):
-        """ Set first activation in input layer equal to the input vector x (a 24x24 picture), 
+        """ Set first activation in input layer equal to the input vector x (a 24x24 picture),
             feed forward through the layers, then return the activations of the last layer.
         """
         self.a[0] = x - 0.5      # Center the input values between [-0.5,0.5]
         # TODO
-        
+
         return(self.a[self.L-1])
 
     def softmax(self, z):
-        # TODO        
-        return ... 
+        Q = [np.exp(z_i) for z_i in z]
+        sum_Q = sum(Q)
+        return np.array([Q_i/sum_Q for Q_i in Q])
 
     def loss(self, pred, y):
         # TODO
-    
+
     def backward(self,x, y):
         """ Compute local gradients, then return gradients of network.
         """
@@ -81,8 +83,8 @@ class BackPropagation:
 
     # Return predicted percentage for class j
     def predict_pct(self, j):
-        return # TODO 
-    
+        return # TODO
+
     def evaluate(self, X, Y, N):
         """ Evaluate the network on a random subset of size N. """
         num_data = min(len(X),len(Y))
@@ -90,7 +92,7 @@ class BackPropagation:
         results = [(self.predict(x), np.argmax(y)) for (x,y) in zip(X[samples],Y[samples])]
         return sum(int(x==y) for (x,y) in results)/N
 
-    
+
     def sgd(self,
             batch_size=50,
             epsilon=0.01,
@@ -102,7 +104,7 @@ class BackPropagation:
             epsilon:    learning rate
             epochs:     the number of times to go through the entire training data
         """
-        
+
         # Compute the number of training examples and number of mini-batches.
         N = min(len(self.trainX), len(self.trainY))
         num_batches = int(N/batch_size)
@@ -116,23 +118,23 @@ class BackPropagation:
         timestamp2 = time.time()
 
         predictions_not_shown = True
-        
+
         # In each "epoch", the network is exposed to the entire training set.
         for t in range(epochs):
 
             # We will order the training data using a random permutation.
             permutation = np.random.permutation(N)
-            
+
             # Evaluate the accuracy on 1000 samples from the training and test data
             test_acc_log.append( self.evaluate(self.testX, self.testY, 1000) )
             train_acc_log.append( self.evaluate(self.trainX, self.trainY, 1000))
             batch_loss = 0
 
             for k in range(num_batches):
-                
+
                 # Reset buffer containing updates
                 # TODO
-                
+
                 # Mini-batch loop
                 for i in range(batch_size):
 
@@ -142,7 +144,7 @@ class BackPropagation:
 
                     # Feed forward inputs
                     # TODO
-                    
+
                     # Compute gradients
                     # TODO
 
@@ -151,12 +153,12 @@ class BackPropagation:
 
                     for l in range(self.L):
                         self.batch_a[l] += self.a[l] / batch_size
-                                    
+
                 # Update the weights at the end of the mini-batch using gradient descent
                 for l in range(1,self.L):
                     self.w[l] = # TODO
                     self.b[l] = # TODO
-                
+
                 # Update logs
                 loss_log.append( batch_loss / batch_size )
                 batch_loss = 0
@@ -188,4 +190,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
