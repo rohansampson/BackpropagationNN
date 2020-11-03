@@ -65,13 +65,10 @@ class BackPropagation:
         return(self.a[self.L-1])
 
     def softmax(self, z):
-        Q = [np.exp(z_i) for z_i in z]
-        sum_Q = sum(Q)
-        return np.array([Q_i/sum_Q for Q_i in Q])
+        return np.exp(z) / np.sum(np.exp(z))
 
     def loss(self, pred, y):
         # TODO
-
     def backward(self,x, y):
         """ Compute local gradients, then return gradients of network.
         """
