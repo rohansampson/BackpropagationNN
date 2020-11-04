@@ -145,7 +145,7 @@ class BackPropagation:
                     # Compute gradients
                     gradient = self.backward(x_pred, y)
 
-                    # Update loss log
+                    # Update losgis log
                     batch_loss += self.loss(self.a[self.L-1], y)
 
                     for l in range(self.L):
