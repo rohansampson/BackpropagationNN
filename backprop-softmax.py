@@ -140,10 +140,10 @@ class BackPropagation:
                     y = self.trainY[permutation[k*batch_size+i]]
 
                     # Feed forward inputs
-                    # TODO
+                    x_pred = self.forward(x)
 
                     # Compute gradients
-                    # TODO
+                    gradient = self.backward(x_pred, y)
 
                     # Update loss log
                     batch_loss += self.loss(self.a[self.L-1], y)
@@ -153,8 +153,8 @@ class BackPropagation:
 
                 # Update the weights at the end of the mini-batch using gradient descent
                 for l in range(1,self.L):
-                    self.w[l] = # TODO
-                    self.b[l] = # TODO
+                    self.w[l] -= epsilon*gradient[0,l] # TODO
+                    self.b[l] -= epsilon*gradient[1,l] # TODO
 
                 # Update logs
                 loss_log.append( batch_loss / batch_size )
