@@ -16,8 +16,8 @@ def sigmoid(x):
 def sigmoid_d(x):
     sigma = sigmoid(x)
     return sigma*(1-sigma)
-def relu(x):
-    return # TODO ##DYLAN
+def relu(x): #Rectified Linear Unit
+    return max(0,x) # DYLAN DOING
 def relu_d(x):
     return # TODO
 
