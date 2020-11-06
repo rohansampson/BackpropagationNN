@@ -65,7 +65,8 @@ class BackPropagation:
         return(self.a[self.L-1])
 
     def softmax(self, z):
-        return np.exp(z) / np.sum(np.exp(z))
+        Q_i = np.exp(z)
+        return Q_i / np.sum(Q_i)
 
     def loss(self, pred, y):
         # TODO
@@ -73,6 +74,7 @@ class BackPropagation:
         """ Compute local gradients, then return gradients of network.
         """
         # TODO
+        pass
 
     # Return predicted image class for input x
     def predict(self, x):
@@ -153,8 +155,8 @@ class BackPropagation:
 
                 # Update the weights at the end of the mini-batch using gradient descent
                 for l in range(1,self.L):
-                    self.w[l] -= epsilon*gradient[0,l] # TODO
-                    self.b[l] -= epsilon*gradient[1,l] # TODO
+                    self.w -= epsilon*self.dw # TODO
+                    self.b -= epsilon*self.db # TODO
 
                 # Update logs
                 loss_log.append( batch_loss / batch_size )
