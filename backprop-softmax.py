@@ -12,7 +12,11 @@ import fnn_utils
 # Choose which one to use by updating the variable phi in the code below.
 
 def sigmoid(x):
-    return # TODO
+    # The logistic sigmoid function defined as (1/(1 + e^-x)) 
+    # takes an input x of any real number and returns an output value in the range of -1 and 1.
+    sig = 1/(1 + np.exp(-x))
+    return sig
+
 def sigmoid_d(x):
     sigma = sigmoid(x)
     return sigma*(1-sigma)
@@ -55,12 +59,30 @@ class BackPropagation:
         # Store activations over the batch for plotting
         self.batch_a       = [np.zeros(m) for m in network_shape]
 
+    # Added function: Forward propagation for a single layer
+    def forward_single(self, A_old, W_layer, B_layer):
+        Z_layer = np.dot(W_layer, A_old) + B_layer
+        A_layer = self.phi(Z_layer)
+            
+        return A_layer, Z_layer
+
+    # Original function: Forward propagation for the entire Neural Network
     def forward(self, x):
         """ Set first activation in input layer equal to the input vector x (a 24x24 picture),
             feed forward through the layers, then return the activations of the last layer.
         """
         self.a[0] = x - 0.5      # Center the input values between [-0.5,0.5]
-        # TODO
+        
+        # TODO        
+        A_layer = self.a[0]        
+
+        for index in L:
+            # Z_current = Sum(W_current x A_previous) + B_current
+            A_old = a[index]
+            W_layer = w[index]
+            B_layer = b[index]
+
+            a[index + 1], Z_layer = forward_single(self, A_old, W_layer, B_layer)
 
         return(self.a[self.L-1])
 
