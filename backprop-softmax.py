@@ -92,7 +92,13 @@ class BackPropagation:
         return np.array([Q_i/sum_Q for Q_i in Q])
 
     def loss(self, pred, y):
-        # TODO
+        c = 0
+        #print(np.argmax(y))
+        for i in range(np.argmax(y)):
+            #print(pred[i])
+            c += -math.log(pred[i])
+        #print(c)
+        return c
 
     def backward(self,x, y): ##DYLAN ## Not Finished
         for i in reversed(range(self.L))):
