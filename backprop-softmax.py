@@ -127,7 +127,7 @@ class BackPropagation:
         	if test_res[i] == test_Y[i] : 
                 	count += 1 
     	pct=float(count/10000)*100        #10000 test examples
-   	 return print(pct)
+   	 return pct
 
     
 
