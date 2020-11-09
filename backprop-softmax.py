@@ -111,8 +111,10 @@ class BackPropagation:
 
     # Return predicted image class for input x
     def predict(self, x):
-        return # TODO
-
+	    res = self.forward(X)
+	    predImageIndex = np.argmax(res)
+        return self.trainX(predImageIndex)
+    
     # Return predicted percentage for class j
     def predict_pct(self, j):
         return # TODO
