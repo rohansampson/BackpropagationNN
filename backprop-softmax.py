@@ -111,7 +111,7 @@ class BackPropagation:
 
     # Return predicted image class for input x
     def predict(self, x):
-	    res = self.forward(X)
+	    res = self.forward(x)
 	    predImageIndex = np.argmax(res)
         return self.trainX(predImageIndex)
     
