@@ -86,7 +86,7 @@ class BackPropagation:
 
         return(self.a[self.L-1])
 
-    def softmax(self, z):
+    def softmax(self,z):
         Q_i = np.exp(z)
         return Q_i / np.sum(Q_i)
 
@@ -100,6 +100,7 @@ class BackPropagation:
         return c
 
     def backward(self,x, y): ##DYLAN ## Not Finished
+        self.delta[self.L-1]= softmax(self,self.z[self.L-1])
         for i in reversed(range(self.L))):
 
 
