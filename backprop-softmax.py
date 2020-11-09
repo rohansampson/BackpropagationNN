@@ -100,7 +100,7 @@ class BackPropagation:
         return c
 
     def backward(self,x, y): ##DYLAN ## Not Finished
-        self.delta[self.L-1]= softmax(self,self.z[self.L-1])
+        self.delta[self.L-1]= softmax(self,self.z[self.L-1]) - ## Kronecker delta function
         for i in reversed(range(self.L))):
 
 
