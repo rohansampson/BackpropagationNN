@@ -103,11 +103,16 @@ class BackPropagation:
         #print(c)
         return c
 
-    def backward(self,x, y): ##DYLAN ## Not Finished
-        self.delta[self.L-1]= softmax(self,self.z[self.L-1]) - ## Kronecker delta function
-        for i in reversed(range(self.L))):
-
-
+    def backward(self,x, y): ##DYLAN ## spaghetti code
+        for i in len(y):
+            self.delta[self.L-1][i] = softmax(self,self.z[self.L-1]) - y[i]
+        for i in reversed(range(self.L-1)):
+            self.delta[i] = np.multiply(np.matmul((self.w[i+1].tranpose()),self.delta[i+1]),sigmoid_d(self.z[i]))
+        for l in range(self.L):
+            for j in range(network_shape[l]):
+                self.db[l][j] = self.delta[l][j]
+                for k in range(network_shape[l]):
+                    self.dw[l][j][k] = np.matmul(self.a[l-1][k],self.delta[l][j])
         """ Compute local gradients, then return gradients of network.
         """
         # TODO
