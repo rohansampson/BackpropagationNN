@@ -7,6 +7,7 @@
 import numpy as np
 import time
 import fnn_utils
+import unittest
 
 # Some activation functions with derivatives.
 # Choose which one to use by updating the variable phi in the code below.
@@ -20,12 +21,13 @@ def sigmoid(x):
 def sigmoid_d(x):
     sigma = sigmoid(x)
     return sigma*(1-sigma)
+
 def relu(x): #Rectified Linear Unit
     return max(0,x)
+
 def relu_d(x):
     relud=0
     if x>0: relud=1
-   
     return relud
 
 class BackPropagation:
@@ -75,8 +77,7 @@ class BackPropagation:
             feed forward through the layers, then return the activations of the last layer.
         """
         self.a[0] = x - 0.5      # Center the input values between [-0.5,0.5]
-
-        # TODO
+        
         A_layer = self.a[0]
 
         for index in L:
@@ -228,6 +229,64 @@ class BackPropagation:
                     self.batch_a[l].fill(0.0)
 
 
+    # Unit Tests (incomplete)
+
+    def test_sigmoid(self):
+        testmatrix= np.array([[1,2,3],[4,5,6]])
+        result = np.array([[0.73105858, 0.88079708, 0.95257413], [0.98201379, 0.99330715, 0.99752738]])
+        self.assertEqual(sigmoid(testmatrix), result)
+
+    def test_sigmoid_d(self):
+        testmatrix= np.array([[ 0.41287266, -0.73082379,  0.78215209],
+            [ 0.76983443,  0.46052273,  0.4283139 ],
+            [-0.18905708,  0.57197116,  0.53226954]])
+        result = np.array([[0.23964155, 0.21937989, 0.2153505 ],
+            [0.21633323, 0.23719975, 0.23887587],
+            [0.24777933, 0.23061838, 0.2330968 ]])
+        self.assertEqual(sigmoid_d(testmatrix), result)
+
+    def test_relu(self):
+        testmatrix= np.array([[1,2,3],[4,5,6]])
+        result = np.array([[1,2,3],[4,5,6]])
+        self.assertEqual(relu(testmatrix), result)
+
+    def test_relu_d(self):
+        testmatrix= np.array([[ 0.41287266, -0.73082379,  0.78215209],
+            [ 0.76983443,  0.46052273,  0.4283139 ],
+            [-0.18905708,  0.57197116,  0.53226954]])
+        result = np.array([[1., 0., 1.],
+            [1., 1., 1.],
+            [0., 1., 1.]])
+        self.assertEqual(relu_d(testmatrix), result)
+
+    def test_forward(self):
+        #TODO
+        return
+
+    def test_softmax(self):
+        #TODO
+        return
+
+    def test_loss(self):
+        #TODO
+        return
+
+    def test_backward(self):
+        #TODO
+        return
+
+    def test_predict(self):
+        #TODO
+        return
+
+    def test_predict_pct(self):
+        #TODO
+        return
+
+    def test_sgd(self):
+        #TODO
+        return
+    
 # Start training with default parameters.
 
 def main():
