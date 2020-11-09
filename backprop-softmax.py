@@ -23,7 +23,10 @@ def sigmoid_d(x):
 def relu(x): #Rectified Linear Unit
     return max(0,x)
 def relu_d(x):
-    return # TODO
+    relud=0
+    if x>0: relud=1
+   
+    return relud
 
 class BackPropagation:
 
@@ -116,8 +119,17 @@ class BackPropagation:
         return self.trainX(predImageIndex)
     
     # Return predicted percentage for class j
-    def predict_pct(self, j):
-        return # TODO
+    def predict_pct(self,j):   # don't know the form of the data yet (may have some bugs)
+    	count=0        # counting how many test samples are coreectly predicted
+    	test_res=predict(self, self.testX)  # the index of the predicted result
+    	test_Y=self.testY[:,:,:,-1]
+   	for i in test_res:           
+        	if test_res[i] == test_Y[i] : 
+                	count += 1 
+    	pct=float(count/10000)*100        #10000 test examples
+   	 return print(pct)
+
+    
 
     def evaluate(self, X, Y, N):
         """ Evaluate the network on a random subset of size N. """
