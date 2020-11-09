@@ -16,8 +16,8 @@ def sigmoid(x):
 def sigmoid_d(x):
     sigma = sigmoid(x)
     return sigma*(1-sigma)
-def relu(x):
-    return # TODO
+def relu(x): #Rectified Linear Unit
+    return max(0,x) # DYLAN DOING
 def relu_d(x):
     return # TODO
 
@@ -70,7 +70,8 @@ class BackPropagation:
 
     def loss(self, pred, y):
         # TODO
-    def backward(self,x, y):
+
+    def backward(self,x, y): ##DYLAN
         """ Compute local gradients, then return gradients of network.
         """
         # TODO
