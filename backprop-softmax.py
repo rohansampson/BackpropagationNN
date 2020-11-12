@@ -23,7 +23,7 @@ def sigmoid_d(x):
     return sigma*(1-sigma)
 
 def relu(x): #Rectified Linear Unit
-    return max(0,x)
+    return np.array([max(0,x_i) for x_i in x])
 
 def relu_d(x):
     relud=0
@@ -66,6 +66,8 @@ class BackPropagation:
 
     # Added function: Forward propagation for a single layer
     def forward_single(self, A_old, W_layer, B_layer):
+        W_layer = W_layer.reshape(-1)
+
         Z_layer = np.dot(W_layer, A_old) + B_layer
         A_layer = self.phi(Z_layer)
 
@@ -77,16 +79,16 @@ class BackPropagation:
             feed forward through the layers, then return the activations of the last layer.
         """
         self.a[0] = x - 0.5      # Center the input values between [-0.5,0.5]
-        
+
         A_layer = self.a[0]
 
-        for index in L:
+        for index in range(self.L):
             # Z_current = Sum(W_current x A_previous) + B_current
-            A_old = a[index]
-            W_layer = w[index]
-            B_layer = b[index]
+            A_old = self.a[index]
+            W_layer = self.w[index]
+            B_layer = self.b[index]
 
-            a[index + 1], Z_layer = forward_single(self, A_old, W_layer, B_layer)
+            self.a[index + 1], Z_layer = self.forward_single(A_old, W_layer, B_layer)
 
         return(self.a[self.L-1])
 
@@ -95,13 +97,8 @@ class BackPropagation:
         return Q_i / np.sum(Q_i)
 
     def loss(self, pred, y):
-        c = 0
-        #print(np.argmax(y))
-        for i in range(np.argmax(y)):
-            #print(pred[i])
-            c += -math.log(pred[i])
-        #print(c)
-        return c
+        cross_entropy = sum([-y[i]*np.log(pred[i]) for i in range(len(y))])
+        return cross_entropy
 
     def backward(self,x, y): ##DYLAN ## spaghetti code
         for i in len(y):
@@ -120,22 +117,22 @@ class BackPropagation:
 
     # Return predicted image class for input x
     def predict(self, x):
-	    res = self.forward(x)
-	    predImageIndex = np.argmax(res)
+        res = self.forward(x)
+        predImageIndex = np.argmax(res)
         return self.trainX(predImageIndex)
-    
+
     # Return predicted percentage for class j
     def predict_pct(self,j):   # don't know the form of the data yet (may have some bugs)
-    	count=0        # counting how many test samples are coreectly predicted
-    	test_res=predict(self, self.testX)  # the index of the predicted result
-    	test_Y=self.testY[:,:,:,-1]
-   	for i in test_res:           
-        	if test_res[i] == test_Y[i] : 
-                	count += 1 
-    	pct=float(count/10000)*100        #10000 test examples
-   	 return pct
+        count=0        # counting how many test samples are coreectly predicted
+        test_res=predict(self, self.testX)  # the index of the predicted result
+        test_Y=self.testY[:,:,:,-1]
+        for i in test_res:
+    	       if test_res[i] == test_Y[i] :
+                   count += 1
+        pct=float(count/10000)*100        #10000 test
+        return pct
 
-    
+
 
     def evaluate(self, X, Y, N):
         """ Evaluate the network on a random subset of size N. """
@@ -273,8 +270,11 @@ class BackPropagation:
         return
 
     def test_loss(self):
-        #TODO
-        return
+        testy = np.array([0, 0, 0, 0, 1, 0, 0, 0, 0, 0])
+        testpred = np.array([1, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+
+        result
+        self.assertEqual(loss(testpred, testy))
 
     def test_backward(self):
         #TODO
@@ -291,7 +291,7 @@ class BackPropagation:
     def test_sgd(self):
         #TODO
         return
-    
+
 # Start training with default parameters.
 
 def main():
