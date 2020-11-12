@@ -66,9 +66,11 @@ class BackPropagation:
 
     # Added function: Forward propagation for a single layer
     def forward_single(self, A_old, W_layer, B_layer):
-        W_layer = W_layer.reshape(-1)
+        if np.shape(W_layer) == (784,1):
 
-        Z_layer = np.dot(W_layer, A_old) + B_layer
+            Z_layer = np.matmul(np.transpose(W_layer), A_old) + B_layer
+        else:
+            Z_layer = np.matmul(W_layer, A_old) + B_layer
         A_layer = self.phi(Z_layer)
 
         return A_layer, Z_layer
@@ -82,7 +84,7 @@ class BackPropagation:
 
         A_layer = self.a[0]
 
-        for index in range(self.L):
+        for index in range(self.L-1):
             # Z_current = Sum(W_current x A_previous) + B_current
             A_old = self.a[index]
             W_layer = self.w[index]
@@ -119,7 +121,7 @@ class BackPropagation:
     def predict(self, x):
         res = self.forward(x)
         predImageIndex = np.argmax(res)
-        return self.trainX(predImageIndex)
+        return self.trainX[predImageIndex]
 
     # Return predicted percentage for class j
     def predict_pct(self,j):   # don't know the form of the data yet (may have some bugs)
@@ -139,7 +141,7 @@ class BackPropagation:
         num_data = min(len(X),len(Y))
         samples = np.random.randint(num_data,size=N)
         results = [(self.predict(x), np.argmax(y)) for (x,y) in zip(X[samples],Y[samples])]
-        return sum(int(x==y) for (x,y) in results)/N
+        return sum([x==y for (x,y) in results])/N
 
 
     def sgd(self,
