@@ -26,9 +26,7 @@ def relu(x): #Rectified Linear Unit
     return np.array([max(0,x_i) for x_i in x])
 
 def relu_d(x):
-    relud=0
-    if x>0: relud=1
-    return relud
+    return (np.array([1 if i > 0 else 0 for i in x]))
 
 class BackPropagation:
 
@@ -56,6 +54,8 @@ class BackPropagation:
         self.w             = [np.random.uniform(-1/np.sqrt(m0),1/np.sqrt(m0),(m1,m0)) for (m0,m1) in self.crossings]
         self.dw            = [np.zeros((m1,m0)) for (m0,m1) in self.crossings]
         self.nabla_C_out   = np.zeros(network_shape[-1])
+
+        self.network_shape = network_shape
 
         # Choose activation function
         self.phi           = relu
@@ -99,22 +99,39 @@ class BackPropagation:
         return Q_i / np.sum(Q_i)
 
     def loss(self, pred, y):
-        cross_entropy = sum([-y[i]*np.log(pred[i]) for i in range(len(y))])
-        return cross_entropy
+        result = sum([-1*np.log(pred[i]) for i in range(len(y))])
+        return result
+
+    def kroneker(self,a,b):
+        return (a==b)
+
 
     def backward(self,x, y): ##DYLAN ## spaghetti code
-        for i in len(y):
-            self.delta[self.L-1][i] = softmax(self,self.z[self.L-1]) - y[i]
-        for i in reversed(range(self.L-1)):
-            self.delta[i] = np.multiply(np.matmul((self.w[i+1].tranpose()),self.delta[i+1]),sigmoid_d(self.z[i]))
-        for l in range(self.L):
-            for j in range(network_shape[l]):
-                self.db[l][j] = self.delta[l][j]
-                for k in range(network_shape[l]):
-                    self.dw[l][j][k] = np.matmul(self.a[l-1][k],self.delta[l][j])
         """ Compute local gradients, then return gradients of network.
         """
-        # TODO
+        # Set activation function in the input layer
+            # Already done in forward
+
+        # For each l=2 to L feed forward a(l) and z(l)
+            #Already done in forward
+
+        # Compute the local gradient for output layer (Set the last layer error)
+        for i in range(len(y)):            
+            softmax_result = self.softmax(self.z[self.L-1]) 
+            self.delta[self.L-1][i] = softmax_result[i] - self.kroneker(np.argmax(y),i)
+
+        # Backpropagate local gradients for hidden kayers L-1 to 2
+        for i in range(self.L-1, 1, -1):    # loop from L-1 to 2 backwards
+            intermediate_val = np.matmul((self.w[i].transpose()),self.delta[i]) # w(l+1)T delta(l+1)
+            self.delta[i] = np.multiply(intermediate_val, self.phi_d(self.z[i-1])) # delta(l) = {w(l+1) delta(l+1)} hadamard_prod phi_d{z(l)}
+
+        # Return the partial derivatives
+        for l in range(self.L):
+            # for j in range(self.network_shape[l]):
+            self.db[l] = self.delta[l]
+
+                # for k in range(self.network_shape[l]):
+            self.dw[l] = np.matmul(self.a[l-1],self.delta[l])
         pass
 
     # Return predicted image class for input x
@@ -233,6 +250,7 @@ class BackPropagation:
                     self.batch_a[l].fill(0.0)
 
 
+    #region UNIT TESTING
     # Unit Tests (incomplete)
 
     def test_sigmoid(self):
@@ -264,35 +282,35 @@ class BackPropagation:
         self.assertEqual(relu_d(testmatrix), result)
 
     def test_forward(self):
-        #TODO
+        #TOTEST
         return
 
     def test_softmax(self):
-        #TODO
+        #TOTEST
         return
 
     def test_loss(self):
         testy = np.array([0, 0, 0, 0, 1, 0, 0, 0, 0, 0])
         testpred = np.array([1, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-
-        result
         self.assertEqual(loss(testpred, testy))
 
     def test_backward(self):
-        #TODO
+        #TOTEST
         return
 
     def test_predict(self):
-        #TODO
+        #TOTEST
         return
 
     def test_predict_pct(self):
-        #TODO
+        #TOTEST
         return
 
     def test_sgd(self):
-        #TODO
+        #TOTEST
         return
+    
+    #endregion
 
 # Start training with default parameters.
 
