@@ -92,7 +92,7 @@ class BackPropagation:
                 self.a[l] = self.phi(self.z[l])
 
 
-        return self.a[-1]
+        return self.a[self.L-1]
 
     def softmax(self,z):
         Q_i = np.exp(z)
@@ -103,31 +103,26 @@ class BackPropagation:
 
         return -np.log(pred[target_idx])
 
-    def kroneker(self,a,b):
-        return (a==b)
-
-
     def backward(self,x, y): ##DYLAN ## spaghetti code
         """ Compute local gradients, then return gradients of network.
         """
         # Set activation function in the input layer
             # Already done in forward
 
-        # For each l=2 to L feed forward a(l) and z(l)
+        # For each l=1 to L feed forward a(l) and z(l)
             #Already done in forward
 
         # Compute the local gradient for output layer (Set the last layer error)
         for i in range(len(y)):
-            softmax_result = self.softmax(self.z[self.L-1])
-            self.delta[self.L-1][i] = softmax_result[i] - self.kroneker(np.argmax(y),i)
+            self.delta[-1][i] = self.a[-1][i] - (np.argmax(y) == i)
 
-        # Backpropagate local gradients for hidden kayers L-1 to 2
-        for l in range(self.L-2, 0, -1):    # loop from L-1 to 2 backwards
-
+        # Backpropagate local gradients for hidden kayers L-1 to 1
+        for l in range(self.L-2, -1, -1):    # loop from L-1 to 1
             intermediate_val = np.matmul((self.w[l+1].transpose()),self.delta[l+1]) # w(l+1)T delta(l+1)
+
             self.delta[l] = self.phi_d(self.z[l]) * intermediate_val # delta(l) = {w(l+1) delta(l+1)} hadamard_prod phi_d{z(l)}
         # Return the partial derivatives
-        for l in range(self.L):
+        for l in range(1,self.L):
 
             self.db[l] = self.delta[l]
 
@@ -137,23 +132,10 @@ class BackPropagation:
     # Return predicted image class for input x
     def predict(self, x):
         res = self.forward(x)
-        predImageIndex = np.argmax(res)
-        return predImageIndex
+        return np.argmax(res)
 
     # Return predicted percentage for class j
-    def predict_pct(self,j):   # don't know the form of the data yet (may have some bugs)
-        """
-        count=0        # counting how many test samples are coreectly predicted
-        for idx, ele in enumerate(self.testX):
-
-            test_res=self.predict(ele)  # the index of the predicted result
-            test_Y=np.argmax(self.testY[idx])
-            if test_res == test_Y:
-                count += 1
-        pct=float(count/10000)*100        #10000 test
-        """
-
-        #return self.predict(self.testX[j])
+    def predict_pct(self,j):
         return self.a[-1][j]
 
 
