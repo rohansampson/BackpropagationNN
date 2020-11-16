@@ -8,6 +8,7 @@ import numpy as np
 import time
 import fnn_utils
 import unittest
+import time
 
 # Some activation functions with derivatives.
 # Choose which one to use by updating the variable phi in the code below.
@@ -39,7 +40,6 @@ class BackPropagation:
 
         # Read the training and test data using the provided utility functions
         self.trainX, self.trainY, self.testX, self.testY = fnn_utils.read_data()
-
         # Number of layers in the network
         self.L = len(network_shape)
 
@@ -80,22 +80,19 @@ class BackPropagation:
         """ Set first activation in input layer equal to the input vector x (a 24x24 picture),
             feed forward through the layers, then return the activations of the last layer.
         """
-        self.a[0] = x - 0.5      # Center the input values between [-0.5,0.5]
+        self.a[0] = (x/255.0) - 0.5      # Center the input values between [-0.5,0.5]
 
-        for l in range(1,self.L-1):
+        for l in range(1,self.L):
             # Z_current = Sum(W_current x A_previous) + B_current
-            """
-            A_old = self.a[index]
-            W_layer = self.w[index]
-            B_layer = self.b[index]
-
-            self.a[index + 1], Z_layer = self.forward_single(A_old, W_layer, B_layer)
-            """
             self.z[l] = np.matmul(self.w[l], self.a[l-1]) + self.b[l]
 
-            self.a[l] = self.phi(self.z[l])
+            if l == self.L-1:
+                self.a[l] = self.softmax(self.z[l])
+            else:
+                self.a[l] = self.phi(self.z[l])
 
-        return self.a[self.L-1]
+
+        return self.a[-1]
 
     def softmax(self,z):
         Q_i = np.exp(z)
@@ -103,9 +100,8 @@ class BackPropagation:
 
     def loss(self, pred, y):
         target_idx = np.argmax(y)
-        Q = np.exp(pred)
-        result = np.log(Q) - pred[target_idx]
-        return result
+
+        return -np.log(pred[target_idx])
 
     def kroneker(self,a,b):
         return (a==b)
@@ -126,15 +122,16 @@ class BackPropagation:
             self.delta[self.L-1][i] = softmax_result[i] - self.kroneker(np.argmax(y),i)
 
         # Backpropagate local gradients for hidden kayers L-1 to 2
-        for i in range(self.L-2, 1, -1):    # loop from L-1 to 2 backwards
-            intermediate_val = np.matmul((self.w[i+1].transpose()),self.delta[i+1]) # w(l+1)T delta(l+1)
-            self.delta[i] = np.multiply(intermediate_val, self.phi_d(self.z[i])) # delta(l) = {w(l+1) delta(l+1)} hadamard_prod phi_d{z(l)}
+        for l in range(self.L-2, 0, -1):    # loop from L-1 to 2 backwards
 
+            intermediate_val = np.matmul((self.w[l+1].transpose()),self.delta[l+1]) # w(l+1)T delta(l+1)
+            self.delta[l] = self.phi_d(self.z[l]) * intermediate_val # delta(l) = {w(l+1) delta(l+1)} hadamard_prod phi_d{z(l)}
         # Return the partial derivatives
         for l in range(self.L):
+
             self.db[l] = self.delta[l]
 
-            self.dw[l] = self.delta[l].reshape(len(self.delta[l]), 1) @ self.a[l-1].reshape(1, len(self.a[l-1]))
+            self.dw[l] = np.matmul(self.delta[l].reshape(len(self.delta[l]), 1), self.a[l-1].reshape(1, len(self.a[l-1])))
         pass
 
     # Return predicted image class for input x
@@ -156,8 +153,8 @@ class BackPropagation:
         pct=float(count/10000)*100        #10000 test
         """
 
-        return self.predict(self.testX[j]) == np.argmax(self.testY[j])
-
+        #return self.predict(self.testX[j])
+        return self.a[-1][j]
 
 
     def evaluate(self, X, Y, N):
@@ -205,13 +202,11 @@ class BackPropagation:
             batch_loss = 0
 
             for k in range(num_batches):
-
                 # Reset buffer containing updates
                 # TODO
 
                 # Mini-batch loop
                 for i in range(batch_size):
-
                     # Select the next training example (x,y)
                     x = self.trainX[permutation[k*batch_size+i]]
                     y = self.trainY[permutation[k*batch_size+i]]
@@ -230,8 +225,8 @@ class BackPropagation:
 
                 # Update the weights at the end of the mini-batch using gradient descent
                 for l in range(1,self.L):
-                    self.w[l] -= epsilon*self.dw[l] # TODO
-                    self.b[l] -= epsilon*self.db[l] # TODO
+                    self.w[l] -= epsilon*self.dw[l]
+                    self.b[l] -= epsilon*self.db[l]
 
                 # Update logs
                 loss_log.append( batch_loss / batch_size )
