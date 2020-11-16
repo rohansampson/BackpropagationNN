@@ -26,7 +26,7 @@ def relu(x): #Rectified Linear Unit
     return np.array([max(0,x_i) for x_i in x])
 
 def relu_d(x):
-    return (np.array([1 if i > 0 else 0 for i in x]))
+    return np.array([1 if i > 0 else 0 for i in x])
 
 class BackPropagation:
 
@@ -82,24 +82,29 @@ class BackPropagation:
         """
         self.a[0] = x - 0.5      # Center the input values between [-0.5,0.5]
 
-        A_layer = self.a[0]
-
-        for index in range(self.L-1):
+        for l in range(1,self.L-1):
             # Z_current = Sum(W_current x A_previous) + B_current
+            """
             A_old = self.a[index]
             W_layer = self.w[index]
             B_layer = self.b[index]
 
             self.a[index + 1], Z_layer = self.forward_single(A_old, W_layer, B_layer)
+            """
+            self.z[l] = np.matmul(self.w[l], self.a[l-1]) + self.b[l]
 
-        return(self.a[self.L-1])
+            self.a[l] = self.phi(self.z[l])
+
+        return self.a[self.L-1]
 
     def softmax(self,z):
         Q_i = np.exp(z)
         return Q_i / np.sum(Q_i)
 
     def loss(self, pred, y):
-        result = sum([-1*np.log(pred[i]) for i in range(len(y))])
+        target_idx = np.argmax(y)
+        Q = np.exp(pred)
+        result = np.log(Q) - pred[target_idx]
         return result
 
     def kroneker(self,a,b):
@@ -116,40 +121,42 @@ class BackPropagation:
             #Already done in forward
 
         # Compute the local gradient for output layer (Set the last layer error)
-        for i in range(len(y)):            
-            softmax_result = self.softmax(self.z[self.L-1]) 
+        for i in range(len(y)):
+            softmax_result = self.softmax(self.z[self.L-1])
             self.delta[self.L-1][i] = softmax_result[i] - self.kroneker(np.argmax(y),i)
 
         # Backpropagate local gradients for hidden kayers L-1 to 2
-        for i in range(self.L-1, 1, -1):    # loop from L-1 to 2 backwards
-            intermediate_val = np.matmul((self.w[i].transpose()),self.delta[i]) # w(l+1)T delta(l+1)
-            self.delta[i] = np.multiply(intermediate_val, self.phi_d(self.z[i-1])) # delta(l) = {w(l+1) delta(l+1)} hadamard_prod phi_d{z(l)}
+        for i in range(self.L-2, 1, -1):    # loop from L-1 to 2 backwards
+            intermediate_val = np.matmul((self.w[i+1].transpose()),self.delta[i+1]) # w(l+1)T delta(l+1)
+            self.delta[i] = np.multiply(intermediate_val, self.phi_d(self.z[i])) # delta(l) = {w(l+1) delta(l+1)} hadamard_prod phi_d{z(l)}
 
         # Return the partial derivatives
         for l in range(self.L):
-            # for j in range(self.network_shape[l]):
             self.db[l] = self.delta[l]
 
-                # for k in range(self.network_shape[l]):
-            self.dw[l] = np.matmul(self.a[l-1],self.delta[l])
+            self.dw[l] = self.delta[l].reshape(len(self.delta[l]), 1) @ self.a[l-1].reshape(1, len(self.a[l-1]))
         pass
 
     # Return predicted image class for input x
     def predict(self, x):
         res = self.forward(x)
         predImageIndex = np.argmax(res)
-        return self.trainX[predImageIndex]
+        return predImageIndex
 
     # Return predicted percentage for class j
     def predict_pct(self,j):   # don't know the form of the data yet (may have some bugs)
+        """
         count=0        # counting how many test samples are coreectly predicted
-        test_res=predict(self, self.testX)  # the index of the predicted result
-        test_Y=self.testY[:,:,:,-1]
-        for i in test_res:
-    	       if test_res[i] == test_Y[i] :
-                   count += 1
+        for idx, ele in enumerate(self.testX):
+
+            test_res=self.predict(ele)  # the index of the predicted result
+            test_Y=np.argmax(self.testY[idx])
+            if test_res == test_Y:
+                count += 1
         pct=float(count/10000)*100        #10000 test
-        return pct
+        """
+
+        return self.predict(self.testX[j]) == np.argmax(self.testY[j])
 
 
 
@@ -189,10 +196,9 @@ class BackPropagation:
 
         # In each "epoch", the network is exposed to the entire training set.
         for t in range(epochs):
-
+            print("epoch ", t)
             # We will order the training data using a random permutation.
             permutation = np.random.permutation(N)
-
             # Evaluate the accuracy on 1000 samples from the training and test data
             test_acc_log.append( self.evaluate(self.testX, self.testY, 1000) )
             train_acc_log.append( self.evaluate(self.trainX, self.trainY, 1000))
@@ -211,10 +217,10 @@ class BackPropagation:
                     y = self.trainY[permutation[k*batch_size+i]]
 
                     # Feed forward inputs
-                    x_pred = self.forward(x)
+                    x_pred = self.predict(x)
 
                     # Compute gradients
-                    gradient = self.backward(x_pred, y)
+                    self.backward(x_pred, y)
 
                     # Update losgis log
                     batch_loss += self.loss(self.a[self.L-1], y)
@@ -224,8 +230,8 @@ class BackPropagation:
 
                 # Update the weights at the end of the mini-batch using gradient descent
                 for l in range(1,self.L):
-                    self.w -= epsilon*self.dw # TODO
-                    self.b -= epsilon*self.db # TODO
+                    self.w[l] -= epsilon*self.dw[l] # TODO
+                    self.b[l] -= epsilon*self.db[l] # TODO
 
                 # Update logs
                 loss_log.append( batch_loss / batch_size )
@@ -309,7 +315,7 @@ class BackPropagation:
     def test_sgd(self):
         #TOTEST
         return
-    
+
     #endregion
 
 # Start training with default parameters.
@@ -317,6 +323,5 @@ class BackPropagation:
 def main():
     bp = BackPropagation()
     bp.sgd()
-
 if __name__ == "__main__":
     main()
