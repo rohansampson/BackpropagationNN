@@ -40,7 +40,7 @@ class BackPropagation:
     def __init__(self,network_shape=[784,20,20,20,10]):
 
         # Network Size Overwrite
-        network_shape=[784,20,20,10]
+        network_shape=[784,20,20,20,10]
 
         # Read the training and test data using the provided utility functions
         self.trainX, self.trainY, self.testX, self.testY = fnn_utils.read_data()
