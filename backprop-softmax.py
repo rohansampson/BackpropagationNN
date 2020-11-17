@@ -177,11 +177,13 @@ class BackPropagation:
             train_acc_log.append( self.evaluate(self.trainX, self.trainY, 1000))
             batch_loss = 0
 
+            print(test_acc_log[-1])
+
             for k in range(num_batches):
                 # Reset buffer containing updates
-                self.dw.fill(0)
-                self.db.fill(0)
-                self.delta.fill(0)
+                self.dw = [np.zeros((m1,m0)) for (m0,m1) in self.crossings]
+                self.db = [np.zeros(m) for m in self.network_shape]
+                self.delta = [np.zeros(m) for m in self.network_shape]
 
                 # Mini-batch loop
                 for i in range(batch_size):
