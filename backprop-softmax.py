@@ -100,27 +100,20 @@ class BackPropagation:
 
     def loss(self, pred, y):
         target_idx = np.argmax(y)
-
         return -np.log(pred[target_idx])
 
-    def backward(self,x, y): ##DYLAN ## spaghetti code
+    def backward(self,x, y):
         """ Compute local gradients, then return gradients of network.
         """
-        # Set activation function in the input layer
-            # Already done in forward
-
-        # For each l=1 to L feed forward a(l) and z(l)
-            #Already done in forward
-
         # Compute the local gradient for output layer (Set the last layer error)
-        for i in range(len(y)):
+        for i in range(self.network_shape[-1]):
             self.delta[-1][i] = self.a[-1][i] - (np.argmax(y) == i)
 
         # Backpropagate local gradients for hidden kayers L-1 to 1
-        for l in range(self.L-2, -1, -1):    # loop from L-1 to 1
-            intermediate_val = np.matmul((self.w[l+1].transpose()),self.delta[l+1]) # w(l+1)T delta(l+1)
+        for l in range(self.L-2, 0, -1):    # loop from L-1 to 1
+            w_T_delta = np.matmul((self.w[l+1].transpose()),self.delta[l+1]) # w(l+1)T delta(l+1)
 
-            self.delta[l] = self.phi_d(self.z[l]) * intermediate_val # delta(l) = {w(l+1) delta(l+1)} hadamard_prod phi_d{z(l)}
+            self.delta[l] = self.phi_d(self.z[l]) * w_T_delta # delta(l) = {w(l+1) delta(l+1)} hadamard_prod phi_d{z(l)}
         # Return the partial derivatives
         for l in range(1,self.L):
 
@@ -185,7 +178,9 @@ class BackPropagation:
 
             for k in range(num_batches):
                 # Reset buffer containing updates
-                # TODO
+                self.dw = np.fill(0)
+                self.db = np.fill(0)
+                self.delta = np.fill(0)
 
                 # Mini-batch loop
                 for i in range(batch_size):
@@ -232,73 +227,11 @@ class BackPropagation:
                 for l in range(self.L):
                     self.batch_a[l].fill(0.0)
 
-
-    #region UNIT TESTING
-    # Unit Tests (incomplete)
-
-    def test_sigmoid(self):
-        testmatrix= np.array([[1,2,3],[4,5,6]])
-        result = np.array([[0.73105858, 0.88079708, 0.95257413], [0.98201379, 0.99330715, 0.99752738]])
-        self.assertEqual(sigmoid(testmatrix), result)
-
-    def test_sigmoid_d(self):
-        testmatrix= np.array([[ 0.41287266, -0.73082379,  0.78215209],
-            [ 0.76983443,  0.46052273,  0.4283139 ],
-            [-0.18905708,  0.57197116,  0.53226954]])
-        result = np.array([[0.23964155, 0.21937989, 0.2153505 ],
-            [0.21633323, 0.23719975, 0.23887587],
-            [0.24777933, 0.23061838, 0.2330968 ]])
-        self.assertEqual(sigmoid_d(testmatrix), result)
-
-    def test_relu(self):
-        testmatrix= np.array([[1,2,3],[4,5,6]])
-        result = np.array([[1,2,3],[4,5,6]])
-        self.assertEqual(relu(testmatrix), result)
-
-    def test_relu_d(self):
-        testmatrix= np.array([[ 0.41287266, -0.73082379,  0.78215209],
-            [ 0.76983443,  0.46052273,  0.4283139 ],
-            [-0.18905708,  0.57197116,  0.53226954]])
-        result = np.array([[1., 0., 1.],
-            [1., 1., 1.],
-            [0., 1., 1.]])
-        self.assertEqual(relu_d(testmatrix), result)
-
-    def test_forward(self):
-        #TOTEST
-        return
-
-    def test_softmax(self):
-        #TOTEST
-        return
-
-    def test_loss(self):
-        testy = np.array([0, 0, 0, 0, 1, 0, 0, 0, 0, 0])
-        testpred = np.array([1, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-        self.assertEqual(loss(testpred, testy))
-
-    def test_backward(self):
-        #TOTEST
-        return
-
-    def test_predict(self):
-        #TOTEST
-        return
-
-    def test_predict_pct(self):
-        #TOTEST
-        return
-
-    def test_sgd(self):
-        #TOTEST
-        return
-
-    #endregion
-
 # Start training with default parameters.
 
 def main():
     bp = BackPropagation()
     bp.sgd()
+
 if __name__ == "__main__":
     main()
