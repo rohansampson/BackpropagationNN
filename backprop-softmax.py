@@ -9,6 +9,7 @@ import time
 import fnn_utils
 import unittest
 import time
+import os
 
 # Some activation functions with derivatives.
 # Choose which one to use by updating the variable phi in the code below.
@@ -219,6 +220,12 @@ class BackPropagation:
                                          loss_log,
                                          test_acc_log,
                                          train_acc_log)
+                    with open("stats.txt", "a") as outfile:
+                        outfile.write(
+                            "Epoch: " + str(t) + 
+                            "\nLoss: " + str(loss_log[-1]) +
+                            "\nTest Accuracy: " + str(test_acc_log[-1]) + 
+                            "\nTrain Accuracy: " + str(train_acc_log[-1])+"\n\n")                    
 
                 # Display predictions every 20 seconds.
                 if (time.time() - timestamp2 > 20) or predictions_not_shown:
@@ -233,6 +240,13 @@ class BackPropagation:
 # Start training with default parameters.
 
 def main():
+    if os.path.exists("stats.png"):
+        os.remove("stats.png")
+    if os.path.exists("predictions.png"):
+        os.remove("predictions.png")
+    if os.path.exists("stats.txt"):
+        os.remove("stats.txt")
+    
     bp = BackPropagation()
     bp.sgd()
 
