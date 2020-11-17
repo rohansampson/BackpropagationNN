@@ -39,6 +39,9 @@ class BackPropagation:
 
     def __init__(self,network_shape=[784,20,20,20,10]):
 
+        # Network Size Overwrite
+        network_shape=[784,20,20,10]
+
         # Read the training and test data using the provided utility functions
         self.trainX, self.trainY, self.testX, self.testY = fnn_utils.read_data()
         # Number of layers in the network
@@ -57,6 +60,7 @@ class BackPropagation:
         self.nabla_C_out   = np.zeros(network_shape[-1])
 
         self.network_shape = network_shape
+        self.starttime = time.time()
 
         # Choose activation function
         self.phi           = relu
@@ -153,6 +157,11 @@ class BackPropagation:
             epochs:     the number of times to go through the entire training data
         """
 
+        # Overwrite
+        batch_size=50
+        epsilon=0.01
+        epochs=1000
+
         # Compute the number of training examples and number of mini-batches.
         N = min(len(self.trainX), len(self.trainY))
         num_batches = int(N/batch_size)
@@ -222,7 +231,8 @@ class BackPropagation:
                                          train_acc_log)
                     with open("stats.txt", "a") as outfile:
                         outfile.write(
-                            "Epoch: " + str(t) + 
+                            "Epoch: " + str(t) +
+                            "\nTime elapsed: " + str(time.time()- self.starttime) + " seconds" +
                             "\nLoss: " + str(loss_log[-1]) +
                             "\nTest Accuracy: " + str(test_acc_log[-1]) + 
                             "\nTrain Accuracy: " + str(train_acc_log[-1])+"\n\n")                    
