@@ -170,6 +170,7 @@ class BackPropagation:
         for t in range(epochs):
             print("epoch ", t)
             # We will order the training data using a random permutation.
+
             permutation = np.random.permutation(N)
             # Evaluate the accuracy on 1000 samples from the training and test data
             test_acc_log.append( self.evaluate(self.testX, self.testY, 1000) )
@@ -178,9 +179,9 @@ class BackPropagation:
 
             for k in range(num_batches):
                 # Reset buffer containing updates
-                self.dw = np.fill(0)
-                self.db = np.fill(0)
-                self.delta = np.fill(0)
+                self.dw.fill(0)
+                self.db.fill(0)
+                self.delta.fill(0)
 
                 # Mini-batch loop
                 for i in range(batch_size):
