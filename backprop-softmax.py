@@ -40,7 +40,7 @@ def tanh(x): # Tanh function
     return np.array([np.tanh(x_i) for x_i in x])
 
 def tanh_d(x):
-    return np.array([(1- np.tanh(x_i)*np.tanh(x_i)) for x_i in x])
+    return np.array([(1- np.tanh(x_i)**2) for x_i in x])
 
 class BackPropagation:
 
@@ -52,7 +52,7 @@ class BackPropagation:
     def __init__(self,network_shape=[784,20,20,20,10]):
 
         # Network Size Overwrite
-        network_shape=[784,20,20,20,10]
+        #network_shape=[784,20,20,20,10]
 
         # Read the training and test data using the provided utility functions
         self.trainX, self.trainY, self.testX, self.testY = fnn_utils.read_data()
@@ -75,8 +75,8 @@ class BackPropagation:
         self.starttime = time.time()
 
         # Choose activation function
-        self.phi           = relu
-        self.phi_d         = relu_d
+        self.phi           = tanh
+        self.phi_d         = tanh_d
 
         # Store activations over the batch for plotting
         self.batch_a       = [np.zeros(m) for m in network_shape]
@@ -206,6 +206,8 @@ class BackPropagation:
                 self.dw = [np.zeros((m1,m0)) for (m0,m1) in self.crossings]
                 self.db = [np.zeros(m) for m in self.network_shape]
                 self.delta = [np.zeros(m) for m in self.network_shape]
+                self.z = [np.zeros(m) for m in self.network_shape]
+                self.a = [np.zeros(m) for m in self.network_shape]
 
                 # Mini-batch loop
                 for i in range(batch_size):
@@ -246,8 +248,8 @@ class BackPropagation:
                             "Epoch: " + str(t) +
                             "\nTime elapsed: " + str(time.time()- self.starttime) + " seconds" +
                             "\nLoss: " + str(loss_log[-1]) +
-                            "\nTest Accuracy: " + str(test_acc_log[-1]) + 
-                            "\nTrain Accuracy: " + str(train_acc_log[-1])+"\n\n")                    
+                            "\nTest Accuracy: " + str(test_acc_log[-1]) +
+                            "\nTrain Accuracy: " + str(train_acc_log[-1])+"\n\n")
 
                 # Display predictions every 20 seconds.
                 if (time.time() - timestamp2 > 20) or predictions_not_shown:
@@ -268,9 +270,9 @@ def main():
         os.remove("predictions.png")
     if os.path.exists("stats.txt"):
         os.remove("stats.txt")
-    
+
     bp = BackPropagation()
-    bp.sgd()
+    bp.sgd(epsilon=0.0067)
 
 if __name__ == "__main__":
     main()
