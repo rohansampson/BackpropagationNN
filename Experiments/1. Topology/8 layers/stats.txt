@@ -1,0 +1,2526 @@
+Epoch: 0
+Time elapsed: 10.28943419456482 seconds
+Loss: 2.2729152305894975
+Test Accuracy: 0.107
+Train Accuracy: 0.091
+
+Epoch: 0
+Time elapsed: 20.261996746063232 seconds
+Loss: 2.3174724936812106
+Test Accuracy: 0.107
+Train Accuracy: 0.091
+
+Epoch: 1
+Time elapsed: 30.28734278678894 seconds
+Loss: 2.286336449343681
+Test Accuracy: 0.085
+Train Accuracy: 0.111
+
+Epoch: 1
+Time elapsed: 40.294811725616455 seconds
+Loss: 2.305886704936113
+Test Accuracy: 0.085
+Train Accuracy: 0.111
+
+Epoch: 2
+Time elapsed: 50.30916714668274 seconds
+Loss: 2.301952206828471
+Test Accuracy: 0.095
+Train Accuracy: 0.097
+
+Epoch: 2
+Time elapsed: 60.322656869888306 seconds
+Loss: 2.307370822462333
+Test Accuracy: 0.095
+Train Accuracy: 0.097
+
+Epoch: 3
+Time elapsed: 70.34071588516235 seconds
+Loss: 2.3177307916567305
+Test Accuracy: 0.107
+Train Accuracy: 0.093
+
+Epoch: 3
+Time elapsed: 80.35142803192139 seconds
+Loss: 2.2869131291887017
+Test Accuracy: 0.107
+Train Accuracy: 0.093
+
+Epoch: 4
+Time elapsed: 90.37216019630432 seconds
+Loss: 2.3102066355203474
+Test Accuracy: 0.116
+Train Accuracy: 0.103
+
+Epoch: 4
+Time elapsed: 100.38277196884155 seconds
+Loss: 2.3012868421276984
+Test Accuracy: 0.116
+Train Accuracy: 0.103
+
+Epoch: 4
+Time elapsed: 110.4427638053894 seconds
+Loss: 2.2979590296571986
+Test Accuracy: 0.116
+Train Accuracy: 0.103
+
+Epoch: 5
+Time elapsed: 120.40255951881409 seconds
+Loss: 2.2811499030773974
+Test Accuracy: 0.119
+Train Accuracy: 0.099
+
+Epoch: 5
+Time elapsed: 130.40853095054626 seconds
+Loss: 2.2097792450371085
+Test Accuracy: 0.119
+Train Accuracy: 0.099
+
+Epoch: 6
+Time elapsed: 140.39805269241333 seconds
+Loss: 1.8346047031382673
+Test Accuracy: 0.167
+Train Accuracy: 0.171
+
+Epoch: 6
+Time elapsed: 150.41563153266907 seconds
+Loss: 1.5488598841311088
+Test Accuracy: 0.167
+Train Accuracy: 0.171
+
+Epoch: 7
+Time elapsed: 160.41386198997498 seconds
+Loss: 1.6142967859239057
+Test Accuracy: 0.263
+Train Accuracy: 0.288
+
+Epoch: 7
+Time elapsed: 170.43542861938477 seconds
+Loss: 1.572836516767004
+Test Accuracy: 0.263
+Train Accuracy: 0.288
+
+Epoch: 8
+Time elapsed: 180.44531917572021 seconds
+Loss: 1.4758557155816885
+Test Accuracy: 0.334
+Train Accuracy: 0.347
+
+Epoch: 8
+Time elapsed: 190.45872378349304 seconds
+Loss: 1.429327064845234
+Test Accuracy: 0.334
+Train Accuracy: 0.347
+
+Epoch: 9
+Time elapsed: 200.54072380065918 seconds
+Loss: 1.3987391029703122
+Test Accuracy: 0.401
+Train Accuracy: 0.435
+
+Epoch: 9
+Time elapsed: 210.5609655380249 seconds
+Loss: 1.323114398687043
+Test Accuracy: 0.401
+Train Accuracy: 0.435
+
+Epoch: 9
+Time elapsed: 220.56744575500488 seconds
+Loss: 1.1962973966913435
+Test Accuracy: 0.401
+Train Accuracy: 0.435
+
+Epoch: 10
+Time elapsed: 230.59029126167297 seconds
+Loss: 1.0223888075797638
+Test Accuracy: 0.476
+Train Accuracy: 0.46
+
+Epoch: 10
+Time elapsed: 240.6009612083435 seconds
+Loss: 1.197255472184956
+Test Accuracy: 0.476
+Train Accuracy: 0.46
+
+Epoch: 11
+Time elapsed: 250.60266757011414 seconds
+Loss: 1.5866384160927032
+Test Accuracy: 0.479
+Train Accuracy: 0.468
+
+Epoch: 11
+Time elapsed: 260.65228629112244 seconds
+Loss: 1.1538856950456196
+Test Accuracy: 0.479
+Train Accuracy: 0.468
+
+Epoch: 12
+Time elapsed: 270.6216173171997 seconds
+Loss: 0.9215621952071251
+Test Accuracy: 0.479
+Train Accuracy: 0.471
+
+Epoch: 12
+Time elapsed: 280.6235613822937 seconds
+Loss: 1.0741847866152825
+Test Accuracy: 0.479
+Train Accuracy: 0.471
+
+Epoch: 12
+Time elapsed: 290.63960695266724 seconds
+Loss: 0.9714367267467601
+Test Accuracy: 0.479
+Train Accuracy: 0.471
+
+Epoch: 13
+Time elapsed: 300.65789270401 seconds
+Loss: 0.9969935020014618
+Test Accuracy: 0.6
+Train Accuracy: 0.56
+
+Epoch: 13
+Time elapsed: 310.6533968448639 seconds
+Loss: 1.0509220577179217
+Test Accuracy: 0.6
+Train Accuracy: 0.56
+
+Epoch: 14
+Time elapsed: 320.65592646598816 seconds
+Loss: 1.1542652242259568
+Test Accuracy: 0.6
+Train Accuracy: 0.603
+
+Epoch: 14
+Time elapsed: 330.6794595718384 seconds
+Loss: 1.1195432318238647
+Test Accuracy: 0.6
+Train Accuracy: 0.603
+
+Epoch: 15
+Time elapsed: 340.66619539260864 seconds
+Loss: 1.0110294462766292
+Test Accuracy: 0.595
+Train Accuracy: 0.631
+
+Epoch: 15
+Time elapsed: 350.6809346675873 seconds
+Loss: 1.2220991763460676
+Test Accuracy: 0.595
+Train Accuracy: 0.631
+
+Epoch: 15
+Time elapsed: 360.68749713897705 seconds
+Loss: 1.0781568629990754
+Test Accuracy: 0.595
+Train Accuracy: 0.631
+
+Epoch: 16
+Time elapsed: 370.698543548584 seconds
+Loss: 1.3483764908566997
+Test Accuracy: 0.592
+Train Accuracy: 0.598
+
+Epoch: 16
+Time elapsed: 380.69062304496765 seconds
+Loss: 0.9769309951077841
+Test Accuracy: 0.592
+Train Accuracy: 0.598
+
+Epoch: 17
+Time elapsed: 390.69508600234985 seconds
+Loss: 1.131593090112588
+Test Accuracy: 0.601
+Train Accuracy: 0.587
+
+Epoch: 17
+Time elapsed: 400.7500956058502 seconds
+Loss: 1.048008778714205
+Test Accuracy: 0.601
+Train Accuracy: 0.587
+
+Epoch: 17
+Time elapsed: 410.7331876754761 seconds
+Loss: 1.155859033678814
+Test Accuracy: 0.601
+Train Accuracy: 0.587
+
+Epoch: 18
+Time elapsed: 420.73280024528503 seconds
+Loss: 1.4532242439433751
+Test Accuracy: 0.65
+Train Accuracy: 0.633
+
+Epoch: 18
+Time elapsed: 430.7479841709137 seconds
+Loss: 0.7696886698545312
+Test Accuracy: 0.65
+Train Accuracy: 0.633
+
+Epoch: 19
+Time elapsed: 440.74694633483887 seconds
+Loss: 0.6138853016560213
+Test Accuracy: 0.579
+Train Accuracy: 0.587
+
+Epoch: 19
+Time elapsed: 450.7687439918518 seconds
+Loss: 0.8682589426121041
+Test Accuracy: 0.579
+Train Accuracy: 0.587
+
+Epoch: 20
+Time elapsed: 460.7785234451294 seconds
+Loss: 1.0313792373644117
+Test Accuracy: 0.618
+Train Accuracy: 0.642
+
+Epoch: 20
+Time elapsed: 470.79276752471924 seconds
+Loss: 0.7429771523950034
+Test Accuracy: 0.618
+Train Accuracy: 0.642
+
+Epoch: 20
+Time elapsed: 480.8093972206116 seconds
+Loss: 1.0284716455497658
+Test Accuracy: 0.618
+Train Accuracy: 0.642
+
+Epoch: 21
+Time elapsed: 490.80347537994385 seconds
+Loss: 0.7567199443320193
+Test Accuracy: 0.58
+Train Accuracy: 0.622
+
+Epoch: 21
+Time elapsed: 500.8085618019104 seconds
+Loss: 0.9186441939902866
+Test Accuracy: 0.58
+Train Accuracy: 0.622
+
+Epoch: 22
+Time elapsed: 510.8300631046295 seconds
+Loss: 1.0753425896804631
+Test Accuracy: 0.667
+Train Accuracy: 0.641
+
+Epoch: 22
+Time elapsed: 520.8232607841492 seconds
+Loss: 0.7918343978120248
+Test Accuracy: 0.667
+Train Accuracy: 0.641
+
+Epoch: 22
+Time elapsed: 530.8349483013153 seconds
+Loss: 0.7688152029459998
+Test Accuracy: 0.667
+Train Accuracy: 0.641
+
+Epoch: 23
+Time elapsed: 540.8412022590637 seconds
+Loss: 1.6278778867021346
+Test Accuracy: 0.683
+Train Accuracy: 0.696
+
+Epoch: 23
+Time elapsed: 550.9182999134064 seconds
+Loss: 0.8783389015404572
+Test Accuracy: 0.683
+Train Accuracy: 0.696
+
+Epoch: 24
+Time elapsed: 560.8672683238983 seconds
+Loss: 0.754148879336486
+Test Accuracy: 0.687
+Train Accuracy: 0.701
+
+Epoch: 24
+Time elapsed: 570.894960641861 seconds
+Loss: 0.8801502830438723
+Test Accuracy: 0.687
+Train Accuracy: 0.701
+
+Epoch: 24
+Time elapsed: 580.8855738639832 seconds
+Loss: 0.7225937621694131
+Test Accuracy: 0.687
+Train Accuracy: 0.701
+
+Epoch: 25
+Time elapsed: 590.9007313251495 seconds
+Loss: 0.5784372610530442
+Test Accuracy: 0.633
+Train Accuracy: 0.633
+
+Epoch: 25
+Time elapsed: 600.9054334163666 seconds
+Loss: 0.972951062631066
+Test Accuracy: 0.633
+Train Accuracy: 0.633
+
+Epoch: 26
+Time elapsed: 610.9327099323273 seconds
+Loss: 0.8662700769576778
+Test Accuracy: 0.701
+Train Accuracy: 0.712
+
+Epoch: 26
+Time elapsed: 620.9326422214508 seconds
+Loss: 0.9426265637333748
+Test Accuracy: 0.701
+Train Accuracy: 0.712
+
+Epoch: 26
+Time elapsed: 630.9446446895599 seconds
+Loss: 1.1506916679242891
+Test Accuracy: 0.701
+Train Accuracy: 0.712
+
+Epoch: 27
+Time elapsed: 640.9408979415894 seconds
+Loss: 0.6330144498021475
+Test Accuracy: 0.673
+Train Accuracy: 0.707
+
+Epoch: 27
+Time elapsed: 650.9592411518097 seconds
+Loss: 0.5601555046080384
+Test Accuracy: 0.673
+Train Accuracy: 0.707
+
+Epoch: 28
+Time elapsed: 660.9618315696716 seconds
+Loss: 1.0298952113676683
+Test Accuracy: 0.585
+Train Accuracy: 0.559
+
+Epoch: 28
+Time elapsed: 670.9819538593292 seconds
+Loss: 1.0537208776671465
+Test Accuracy: 0.585
+Train Accuracy: 0.559
+
+Epoch: 28
+Time elapsed: 680.9753241539001 seconds
+Loss: 1.0989130094530482
+Test Accuracy: 0.585
+Train Accuracy: 0.559
+
+Epoch: 29
+Time elapsed: 691.0029981136322 seconds
+Loss: 0.6505703198665636
+Test Accuracy: 0.662
+Train Accuracy: 0.687
+
+Epoch: 29
+Time elapsed: 700.9986619949341 seconds
+Loss: 0.515415483384037
+Test Accuracy: 0.662
+Train Accuracy: 0.687
+
+Epoch: 29
+Time elapsed: 711.0150928497314 seconds
+Loss: 0.7761527079498591
+Test Accuracy: 0.662
+Train Accuracy: 0.687
+
+Epoch: 30
+Time elapsed: 721.0230760574341 seconds
+Loss: 0.6602522736896388
+Test Accuracy: 0.673
+Train Accuracy: 0.691
+
+Epoch: 30
+Time elapsed: 731.0409920215607 seconds
+Loss: 0.840374755988384
+Test Accuracy: 0.673
+Train Accuracy: 0.691
+
+Epoch: 31
+Time elapsed: 741.0519528388977 seconds
+Loss: 0.6229412351056203
+Test Accuracy: 0.716
+Train Accuracy: 0.702
+
+Epoch: 31
+Time elapsed: 751.0604066848755 seconds
+Loss: 0.9530442985994755
+Test Accuracy: 0.716
+Train Accuracy: 0.702
+
+Epoch: 31
+Time elapsed: 761.0535213947296 seconds
+Loss: 0.616469020529681
+Test Accuracy: 0.716
+Train Accuracy: 0.702
+
+Epoch: 32
+Time elapsed: 771.0763096809387 seconds
+Loss: 1.0246119623232988
+Test Accuracy: 0.678
+Train Accuracy: 0.669
+
+Epoch: 32
+Time elapsed: 781.0906052589417 seconds
+Loss: 0.8662259062441734
+Test Accuracy: 0.678
+Train Accuracy: 0.669
+
+Epoch: 32
+Time elapsed: 791.1092264652252 seconds
+Loss: 0.5518535677120324
+Test Accuracy: 0.678
+Train Accuracy: 0.669
+
+Epoch: 33
+Time elapsed: 801.1061267852783 seconds
+Loss: 1.050600305309203
+Test Accuracy: 0.594
+Train Accuracy: 0.648
+
+Epoch: 33
+Time elapsed: 811.1348526477814 seconds
+Loss: 0.823832246678755
+Test Accuracy: 0.594
+Train Accuracy: 0.648
+
+Epoch: 34
+Time elapsed: 821.1275448799133 seconds
+Loss: 0.7699372364731104
+Test Accuracy: 0.733
+Train Accuracy: 0.707
+
+Epoch: 34
+Time elapsed: 831.1365413665771 seconds
+Loss: 1.089034792651971
+Test Accuracy: 0.733
+Train Accuracy: 0.707
+
+Epoch: 34
+Time elapsed: 841.1376314163208 seconds
+Loss: 0.7802189576791604
+Test Accuracy: 0.733
+Train Accuracy: 0.707
+
+Epoch: 35
+Time elapsed: 851.2152307033539 seconds
+Loss: 0.6236376469739529
+Test Accuracy: 0.662
+Train Accuracy: 0.657
+
+Epoch: 35
+Time elapsed: 861.1611015796661 seconds
+Loss: 0.8291547918653289
+Test Accuracy: 0.662
+Train Accuracy: 0.657
+
+Epoch: 35
+Time elapsed: 871.1724343299866 seconds
+Loss: 0.8660711481663153
+Test Accuracy: 0.662
+Train Accuracy: 0.657
+
+Epoch: 36
+Time elapsed: 881.1830971240997 seconds
+Loss: 2.0439085744060415
+Test Accuracy: 0.674
+Train Accuracy: 0.671
+
+Epoch: 36
+Time elapsed: 891.1959207057953 seconds
+Loss: 0.8619395148518275
+Test Accuracy: 0.674
+Train Accuracy: 0.671
+
+Epoch: 37
+Time elapsed: 901.2058613300323 seconds
+Loss: 0.6740139181304033
+Test Accuracy: 0.701
+Train Accuracy: 0.703
+
+Epoch: 37
+Time elapsed: 911.2277233600616 seconds
+Loss: 0.7184165478474206
+Test Accuracy: 0.701
+Train Accuracy: 0.703
+
+Epoch: 37
+Time elapsed: 921.2281424999237 seconds
+Loss: 0.6906085590905385
+Test Accuracy: 0.701
+Train Accuracy: 0.703
+
+Epoch: 38
+Time elapsed: 931.2440538406372 seconds
+Loss: 0.6864927462919468
+Test Accuracy: 0.681
+Train Accuracy: 0.684
+
+Epoch: 38
+Time elapsed: 941.2576916217804 seconds
+Loss: 0.5962728911516271
+Test Accuracy: 0.681
+Train Accuracy: 0.684
+
+Epoch: 38
+Time elapsed: 951.2678093910217 seconds
+Loss: 0.5907870012220076
+Test Accuracy: 0.681
+Train Accuracy: 0.684
+
+Epoch: 39
+Time elapsed: 961.2700908184052 seconds
+Loss: 0.6812061857851388
+Test Accuracy: 0.711
+Train Accuracy: 0.71
+
+Epoch: 39
+Time elapsed: 971.292441368103 seconds
+Loss: 0.6230651913123995
+Test Accuracy: 0.711
+Train Accuracy: 0.71
+
+Epoch: 40
+Time elapsed: 981.3025794029236 seconds
+Loss: 0.5152177862985649
+Test Accuracy: 0.711
+Train Accuracy: 0.753
+
+Epoch: 40
+Time elapsed: 991.3210833072662 seconds
+Loss: 0.7150530091447282
+Test Accuracy: 0.711
+Train Accuracy: 0.753
+
+Epoch: 40
+Time elapsed: 1001.384161233902 seconds
+Loss: 0.7051347724146165
+Test Accuracy: 0.711
+Train Accuracy: 0.753
+
+Epoch: 40
+Time elapsed: 1011.3340816497803 seconds
+Loss: 0.8061208802799368
+Test Accuracy: 0.711
+Train Accuracy: 0.753
+
+Epoch: 41
+Time elapsed: 1021.3293962478638 seconds
+Loss: 0.6368618618499585
+Test Accuracy: 0.694
+Train Accuracy: 0.656
+
+Epoch: 41
+Time elapsed: 1031.3443863391876 seconds
+Loss: 0.7963957667087374
+Test Accuracy: 0.694
+Train Accuracy: 0.656
+
+Epoch: 42
+Time elapsed: 1041.345475435257 seconds
+Loss: 0.5429362174375902
+Test Accuracy: 0.728
+Train Accuracy: 0.724
+
+Epoch: 42
+Time elapsed: 1051.3558876514435 seconds
+Loss: 0.6512238487125095
+Test Accuracy: 0.728
+Train Accuracy: 0.724
+
+Epoch: 42
+Time elapsed: 1061.3556036949158 seconds
+Loss: 0.5438147127534123
+Test Accuracy: 0.728
+Train Accuracy: 0.724
+
+Epoch: 43
+Time elapsed: 1071.3631761074066 seconds
+Loss: 0.8313439071226658
+Test Accuracy: 0.719
+Train Accuracy: 0.757
+
+Epoch: 43
+Time elapsed: 1081.3603343963623 seconds
+Loss: 0.7646416490074983
+Test Accuracy: 0.719
+Train Accuracy: 0.757
+
+Epoch: 43
+Time elapsed: 1091.379467010498 seconds
+Loss: 1.2966545546322925
+Test Accuracy: 0.719
+Train Accuracy: 0.757
+
+Epoch: 44
+Time elapsed: 1101.3812012672424 seconds
+Loss: 1.8851099955781705
+Test Accuracy: 0.736
+Train Accuracy: 0.731
+
+Epoch: 44
+Time elapsed: 1111.3913984298706 seconds
+Loss: 0.7875576693383363
+Test Accuracy: 0.736
+Train Accuracy: 0.731
+
+Epoch: 44
+Time elapsed: 1121.396876335144 seconds
+Loss: 0.7853259329068972
+Test Accuracy: 0.736
+Train Accuracy: 0.731
+
+Epoch: 45
+Time elapsed: 1131.415454864502 seconds
+Loss: 0.7868609130502172
+Test Accuracy: 0.742
+Train Accuracy: 0.748
+
+Epoch: 45
+Time elapsed: 1141.4118115901947 seconds
+Loss: 0.8889999532106992
+Test Accuracy: 0.742
+Train Accuracy: 0.748
+
+Epoch: 45
+Time elapsed: 1151.4970273971558 seconds
+Loss: 0.875177446501381
+Test Accuracy: 0.742
+Train Accuracy: 0.748
+
+Epoch: 46
+Time elapsed: 1161.4473805427551 seconds
+Loss: 0.5623307708974697
+Test Accuracy: 0.752
+Train Accuracy: 0.768
+
+Epoch: 46
+Time elapsed: 1171.4691216945648 seconds
+Loss: 0.518414523318071
+Test Accuracy: 0.752
+Train Accuracy: 0.768
+
+Epoch: 47
+Time elapsed: 1181.713886976242 seconds
+Loss: 0.6509674976148527
+Test Accuracy: 0.704
+Train Accuracy: 0.703
+
+Epoch: 47
+Time elapsed: 1191.7271921634674 seconds
+Loss: 0.71126315186479
+Test Accuracy: 0.704
+Train Accuracy: 0.703
+
+Epoch: 47
+Time elapsed: 1201.739907503128 seconds
+Loss: 0.6294862110008903
+Test Accuracy: 0.704
+Train Accuracy: 0.703
+
+Epoch: 47
+Time elapsed: 1211.7673349380493 seconds
+Loss: 0.5306419257892286
+Test Accuracy: 0.704
+Train Accuracy: 0.703
+
+Epoch: 48
+Time elapsed: 1221.7576518058777 seconds
+Loss: 0.5905263316297222
+Test Accuracy: 0.762
+Train Accuracy: 0.762
+
+Epoch: 48
+Time elapsed: 1231.7749845981598 seconds
+Loss: 1.233684479244816
+Test Accuracy: 0.762
+Train Accuracy: 0.762
+
+Epoch: 49
+Time elapsed: 2154.981805562973 seconds
+Loss: 0.5255335282002664
+Test Accuracy: 0.747
+Train Accuracy: 0.764
+
+Epoch: 49
+Time elapsed: 2161.519186973572 seconds
+Loss: 0.5956576921417414
+Test Accuracy: 0.747
+Train Accuracy: 0.764
+
+Epoch: 49
+Time elapsed: 2171.5467529296875 seconds
+Loss: 0.7283471936296315
+Test Accuracy: 0.747
+Train Accuracy: 0.764
+
+Epoch: 49
+Time elapsed: 2181.6803245544434 seconds
+Loss: 0.65339969233181
+Test Accuracy: 0.747
+Train Accuracy: 0.764
+
+Epoch: 50
+Time elapsed: 2191.649983882904 seconds
+Loss: 0.6848796059795754
+Test Accuracy: 0.761
+Train Accuracy: 0.745
+
+Epoch: 50
+Time elapsed: 2201.6544580459595 seconds
+Loss: 0.5124840926132781
+Test Accuracy: 0.761
+Train Accuracy: 0.745
+
+Epoch: 50
+Time elapsed: 2211.731511116028 seconds
+Loss: 0.585460380347476
+Test Accuracy: 0.761
+Train Accuracy: 0.745
+
+Epoch: 50
+Time elapsed: 2221.6828153133392 seconds
+Loss: 0.6923355792733779
+Test Accuracy: 0.761
+Train Accuracy: 0.745
+
+Epoch: 51
+Time elapsed: 2231.689533472061 seconds
+Loss: 0.6120823646710759
+Test Accuracy: 0.738
+Train Accuracy: 0.726
+
+Epoch: 51
+Time elapsed: 2241.7028267383575 seconds
+Loss: 0.6721315659002339
+Test Accuracy: 0.738
+Train Accuracy: 0.726
+
+Epoch: 52
+Time elapsed: 2251.7134006023407 seconds
+Loss: 0.5975187026887508
+Test Accuracy: 0.765
+Train Accuracy: 0.754
+
+Epoch: 52
+Time elapsed: 2261.747015953064 seconds
+Loss: 0.5516788139858707
+Test Accuracy: 0.765
+Train Accuracy: 0.754
+
+Epoch: 52
+Time elapsed: 2271.7408242225647 seconds
+Loss: 0.8239768289307612
+Test Accuracy: 0.765
+Train Accuracy: 0.754
+
+Epoch: 52
+Time elapsed: 2281.7570798397064 seconds
+Loss: 0.7113403754110389
+Test Accuracy: 0.765
+Train Accuracy: 0.754
+
+Epoch: 53
+Time elapsed: 2291.743189573288 seconds
+Loss: 1.043899248727401
+Test Accuracy: 0.773
+Train Accuracy: 0.78
+
+Epoch: 53
+Time elapsed: 2301.7519965171814 seconds
+Loss: 0.5740370826973826
+Test Accuracy: 0.773
+Train Accuracy: 0.78
+
+Epoch: 54
+Time elapsed: 2311.7571547031403 seconds
+Loss: 0.7374424694890735
+Test Accuracy: 0.723
+Train Accuracy: 0.723
+
+Epoch: 54
+Time elapsed: 2321.7768783569336 seconds
+Loss: 0.6683375231678822
+Test Accuracy: 0.723
+Train Accuracy: 0.723
+
+Epoch: 54
+Time elapsed: 2331.772779226303 seconds
+Loss: 0.7304607975147935
+Test Accuracy: 0.723
+Train Accuracy: 0.723
+
+Epoch: 54
+Time elapsed: 2341.794451713562 seconds
+Loss: 0.5669981516465176
+Test Accuracy: 0.723
+Train Accuracy: 0.723
+
+Epoch: 55
+Time elapsed: 2351.862152814865 seconds
+Loss: 0.5650778829830634
+Test Accuracy: 0.752
+Train Accuracy: 0.754
+
+Epoch: 55
+Time elapsed: 2361.8034183979034 seconds
+Loss: 0.8313851302183983
+Test Accuracy: 0.752
+Train Accuracy: 0.754
+
+Epoch: 55
+Time elapsed: 2371.8064699172974 seconds
+Loss: 0.5911142331483903
+Test Accuracy: 0.752
+Train Accuracy: 0.754
+
+Epoch: 56
+Time elapsed: 2381.8271884918213 seconds
+Loss: 0.6683741903129972
+Test Accuracy: 0.784
+Train Accuracy: 0.761
+
+Epoch: 56
+Time elapsed: 2391.833627462387 seconds
+Loss: 0.5395481512651468
+Test Accuracy: 0.784
+Train Accuracy: 0.761
+
+Epoch: 56
+Time elapsed: 2401.853885412216 seconds
+Loss: 0.7578413917624305
+Test Accuracy: 0.784
+Train Accuracy: 0.761
+
+Epoch: 57
+Time elapsed: 2411.852817773819 seconds
+Loss: 0.9208696556722935
+Test Accuracy: 0.769
+Train Accuracy: 0.775
+
+Epoch: 57
+Time elapsed: 2421.893529653549 seconds
+Loss: 0.4092385009671481
+Test Accuracy: 0.769
+Train Accuracy: 0.775
+
+Epoch: 57
+Time elapsed: 2431.8833978176117 seconds
+Loss: 0.8020099762542791
+Test Accuracy: 0.769
+Train Accuracy: 0.775
+
+Epoch: 58
+Time elapsed: 2441.9735214710236 seconds
+Loss: 0.48114737891591863
+Test Accuracy: 0.733
+Train Accuracy: 0.734
+
+Epoch: 58
+Time elapsed: 2451.9782404899597 seconds
+Loss: 0.7180044412947146
+Test Accuracy: 0.733
+Train Accuracy: 0.734
+
+Epoch: 58
+Time elapsed: 2462.1135289669037 seconds
+Loss: 0.9288352757857871
+Test Accuracy: 0.733
+Train Accuracy: 0.734
+
+Epoch: 59
+Time elapsed: 2472.109127521515 seconds
+Loss: 0.5512441663961893
+Test Accuracy: 0.772
+Train Accuracy: 0.776
+
+Epoch: 59
+Time elapsed: 2482.1895382404327 seconds
+Loss: 0.7048257135357479
+Test Accuracy: 0.772
+Train Accuracy: 0.776
+
+Epoch: 59
+Time elapsed: 2492.2065348625183 seconds
+Loss: 0.49454256171155203
+Test Accuracy: 0.772
+Train Accuracy: 0.776
+
+Epoch: 59
+Time elapsed: 2502.855722427368 seconds
+Loss: 0.5182195593966288
+Test Accuracy: 0.772
+Train Accuracy: 0.776
+
+Epoch: 60
+Time elapsed: 2512.7407417297363 seconds
+Loss: 0.5453463874157513
+Test Accuracy: 0.779
+Train Accuracy: 0.799
+
+Epoch: 60
+Time elapsed: 2522.752872467041 seconds
+Loss: 0.5394620612350015
+Test Accuracy: 0.779
+Train Accuracy: 0.799
+
+Epoch: 60
+Time elapsed: 2532.7489125728607 seconds
+Loss: 0.7609464864479536
+Test Accuracy: 0.779
+Train Accuracy: 0.799
+
+Epoch: 61
+Time elapsed: 2542.7634620666504 seconds
+Loss: 0.8959591510734264
+Test Accuracy: 0.72
+Train Accuracy: 0.7
+
+Epoch: 61
+Time elapsed: 2552.7595489025116 seconds
+Loss: 0.5311522598829267
+Test Accuracy: 0.72
+Train Accuracy: 0.7
+
+Epoch: 61
+Time elapsed: 2562.78085398674 seconds
+Loss: 0.4688701107749622
+Test Accuracy: 0.72
+Train Accuracy: 0.7
+
+Epoch: 62
+Time elapsed: 2572.7775321006775 seconds
+Loss: 0.4574765831732257
+Test Accuracy: 0.804
+Train Accuracy: 0.789
+
+Epoch: 62
+Time elapsed: 2582.7934625148773 seconds
+Loss: 0.7282453523736595
+Test Accuracy: 0.804
+Train Accuracy: 0.789
+
+Epoch: 62
+Time elapsed: 2592.7918088436127 seconds
+Loss: 0.4539395796353142
+Test Accuracy: 0.804
+Train Accuracy: 0.789
+
+Epoch: 62
+Time elapsed: 2602.8022191524506 seconds
+Loss: 0.3679676733247004
+Test Accuracy: 0.804
+Train Accuracy: 0.789
+
+Epoch: 63
+Time elapsed: 2612.7947170734406 seconds
+Loss: 0.29131200923335826
+Test Accuracy: 0.799
+Train Accuracy: 0.798
+
+Epoch: 63
+Time elapsed: 2622.800745487213 seconds
+Loss: 0.8288870658793053
+Test Accuracy: 0.799
+Train Accuracy: 0.798
+
+Epoch: 63
+Time elapsed: 2632.833647251129 seconds
+Loss: 0.7002782446681148
+Test Accuracy: 0.799
+Train Accuracy: 0.798
+
+Epoch: 64
+Time elapsed: 2642.9296872615814 seconds
+Loss: 0.9612594618365102
+Test Accuracy: 0.758
+Train Accuracy: 0.76
+
+Epoch: 64
+Time elapsed: 2652.8419001102448 seconds
+Loss: 0.7769210607118258
+Test Accuracy: 0.758
+Train Accuracy: 0.76
+
+Epoch: 64
+Time elapsed: 2663.243434906006 seconds
+Loss: 0.6325045403309261
+Test Accuracy: 0.758
+Train Accuracy: 0.76
+
+Epoch: 65
+Time elapsed: 2673.2458193302155 seconds
+Loss: 0.6984830202827834
+Test Accuracy: 0.786
+Train Accuracy: 0.79
+
+Epoch: 65
+Time elapsed: 2683.2677114009857 seconds
+Loss: 0.6474923863350719
+Test Accuracy: 0.786
+Train Accuracy: 0.79
+
+Epoch: 65
+Time elapsed: 2693.274694442749 seconds
+Loss: 0.5048878751396425
+Test Accuracy: 0.786
+Train Accuracy: 0.79
+
+Epoch: 65
+Time elapsed: 2703.2869720458984 seconds
+Loss: 0.5065295904333063
+Test Accuracy: 0.786
+Train Accuracy: 0.79
+
+Epoch: 66
+Time elapsed: 2713.2842750549316 seconds
+Loss: 0.5489927080898797
+Test Accuracy: 0.766
+Train Accuracy: 0.791
+
+Epoch: 66
+Time elapsed: 2723.4960057735443 seconds
+Loss: 0.5938214292327944
+Test Accuracy: 0.766
+Train Accuracy: 0.791
+
+Epoch: 66
+Time elapsed: 2733.515193939209 seconds
+Loss: 0.6147150672071306
+Test Accuracy: 0.766
+Train Accuracy: 0.791
+
+Epoch: 66
+Time elapsed: 2743.5221841335297 seconds
+Loss: 0.5891243083197198
+Test Accuracy: 0.766
+Train Accuracy: 0.791
+
+Epoch: 67
+Time elapsed: 2753.527945995331 seconds
+Loss: 0.6422795714112912
+Test Accuracy: 0.803
+Train Accuracy: 0.805
+
+Epoch: 67
+Time elapsed: 2763.5478625297546 seconds
+Loss: 0.402793024361331
+Test Accuracy: 0.803
+Train Accuracy: 0.805
+
+Epoch: 67
+Time elapsed: 2773.5524933338165 seconds
+Loss: 0.6937486884237994
+Test Accuracy: 0.803
+Train Accuracy: 0.805
+
+Epoch: 68
+Time elapsed: 2783.7861235141754 seconds
+Loss: 0.41053439302066613
+Test Accuracy: 0.806
+Train Accuracy: 0.818
+
+Epoch: 68
+Time elapsed: 2793.6864218711853 seconds
+Loss: 0.5091777014041954
+Test Accuracy: 0.806
+Train Accuracy: 0.818
+
+Epoch: 68
+Time elapsed: 2803.9989683628082 seconds
+Loss: 0.5196737974324772
+Test Accuracy: 0.806
+Train Accuracy: 0.818
+
+Epoch: 69
+Time elapsed: 2814.0043983459473 seconds
+Loss: 0.5955792031159153
+Test Accuracy: 0.795
+Train Accuracy: 0.792
+
+Epoch: 69
+Time elapsed: 2824.0238881111145 seconds
+Loss: 0.45015526723647087
+Test Accuracy: 0.795
+Train Accuracy: 0.792
+
+Epoch: 69
+Time elapsed: 2834.037756919861 seconds
+Loss: 0.5826774547934597
+Test Accuracy: 0.795
+Train Accuracy: 0.792
+
+Epoch: 69
+Time elapsed: 2844.0559844970703 seconds
+Loss: 0.916762764584434
+Test Accuracy: 0.795
+Train Accuracy: 0.792
+
+Epoch: 70
+Time elapsed: 2854.0685794353485 seconds
+Loss: 0.6517147246901612
+Test Accuracy: 0.758
+Train Accuracy: 0.783
+
+Epoch: 70
+Time elapsed: 2864.1543056964874 seconds
+Loss: 0.816428791642451
+Test Accuracy: 0.758
+Train Accuracy: 0.783
+
+Epoch: 70
+Time elapsed: 2874.16055226326 seconds
+Loss: 0.5599929462544053
+Test Accuracy: 0.758
+Train Accuracy: 0.783
+
+Epoch: 70
+Time elapsed: 2884.1753072738647 seconds
+Loss: 0.6038118464046338
+Test Accuracy: 0.758
+Train Accuracy: 0.783
+
+Epoch: 71
+Time elapsed: 2894.167391061783 seconds
+Loss: 0.6687063431059117
+Test Accuracy: 0.809
+Train Accuracy: 0.803
+
+Epoch: 71
+Time elapsed: 2904.304274082184 seconds
+Loss: 0.6052685460288467
+Test Accuracy: 0.809
+Train Accuracy: 0.803
+
+Epoch: 71
+Time elapsed: 2914.3039269447327 seconds
+Loss: 0.7178336718789978
+Test Accuracy: 0.809
+Train Accuracy: 0.803
+
+Epoch: 71
+Time elapsed: 2924.310789823532 seconds
+Loss: 0.686691608593777
+Test Accuracy: 0.809
+Train Accuracy: 0.803
+
+Epoch: 72
+Time elapsed: 2934.398512363434 seconds
+Loss: 0.4482642342358384
+Test Accuracy: 0.804
+Train Accuracy: 0.79
+
+Epoch: 72
+Time elapsed: 2944.4217376708984 seconds
+Loss: 0.48064495599417273
+Test Accuracy: 0.804
+Train Accuracy: 0.79
+
+Epoch: 72
+Time elapsed: 2954.4437084198 seconds
+Loss: 0.6233820235160608
+Test Accuracy: 0.804
+Train Accuracy: 0.79
+
+Epoch: 72
+Time elapsed: 2964.439049720764 seconds
+Loss: 0.4763601360531036
+Test Accuracy: 0.804
+Train Accuracy: 0.79
+
+Epoch: 73
+Time elapsed: 2974.439518213272 seconds
+Loss: 0.6374862722085934
+Test Accuracy: 0.774
+Train Accuracy: 0.806
+
+Epoch: 73
+Time elapsed: 2984.494085073471 seconds
+Loss: 0.5368394817719224
+Test Accuracy: 0.774
+Train Accuracy: 0.806
+
+Epoch: 73
+Time elapsed: 2994.4950833320618 seconds
+Loss: 0.5602649508253014
+Test Accuracy: 0.774
+Train Accuracy: 0.806
+
+Epoch: 73
+Time elapsed: 3004.880309820175 seconds
+Loss: 0.6290011714864654
+Test Accuracy: 0.774
+Train Accuracy: 0.806
+
+Epoch: 74
+Time elapsed: 3014.8974261283875 seconds
+Loss: 0.5673312565426866
+Test Accuracy: 0.788
+Train Accuracy: 0.801
+
+Epoch: 74
+Time elapsed: 3025.215749979019 seconds
+Loss: 0.4768598036719249
+Test Accuracy: 0.788
+Train Accuracy: 0.801
+
+Epoch: 74
+Time elapsed: 3035.2359397411346 seconds
+Loss: 0.5700002797936086
+Test Accuracy: 0.788
+Train Accuracy: 0.801
+
+Epoch: 74
+Time elapsed: 3045.457345724106 seconds
+Loss: 0.4808177680192951
+Test Accuracy: 0.788
+Train Accuracy: 0.801
+
+Epoch: 75
+Time elapsed: 3055.4518666267395 seconds
+Loss: 0.587461479066362
+Test Accuracy: 0.796
+Train Accuracy: 0.758
+
+Epoch: 75
+Time elapsed: 3065.5693683624268 seconds
+Loss: 0.5295608586709319
+Test Accuracy: 0.796
+Train Accuracy: 0.758
+
+Epoch: 75
+Time elapsed: 3075.563355445862 seconds
+Loss: 0.3676490353717087
+Test Accuracy: 0.796
+Train Accuracy: 0.758
+
+Epoch: 75
+Time elapsed: 3085.7109394073486 seconds
+Loss: 0.5140477712348535
+Test Accuracy: 0.796
+Train Accuracy: 0.758
+
+Epoch: 76
+Time elapsed: 3095.606831550598 seconds
+Loss: 0.40755495586599877
+Test Accuracy: 0.799
+Train Accuracy: 0.831
+
+Epoch: 76
+Time elapsed: 3105.6305253505707 seconds
+Loss: 0.4641262399658753
+Test Accuracy: 0.799
+Train Accuracy: 0.831
+
+Epoch: 76
+Time elapsed: 3115.618814229965 seconds
+Loss: 0.5140709429510002
+Test Accuracy: 0.799
+Train Accuracy: 0.831
+
+Epoch: 76
+Time elapsed: 3125.758434534073 seconds
+Loss: 0.7844978267201759
+Test Accuracy: 0.799
+Train Accuracy: 0.831
+
+Epoch: 77
+Time elapsed: 3135.753532409668 seconds
+Loss: 0.6231075096310814
+Test Accuracy: 0.789
+Train Accuracy: 0.802
+
+Epoch: 77
+Time elapsed: 3146.1809787750244 seconds
+Loss: 0.7190382971782838
+Test Accuracy: 0.789
+Train Accuracy: 0.802
+
+Epoch: 77
+Time elapsed: 3166.2239623069763 seconds
+Loss: 0.7254125961093564
+Test Accuracy: 0.789
+Train Accuracy: 0.802
+
+Epoch: 78
+Time elapsed: 3186.221319437027 seconds
+Loss: 0.5964064723592287
+Test Accuracy: 0.792
+Train Accuracy: 0.821
+
+Epoch: 78
+Time elapsed: 3196.2212574481964 seconds
+Loss: 0.6320445291919156
+Test Accuracy: 0.792
+Train Accuracy: 0.821
+
+Epoch: 78
+Time elapsed: 3206.696868419647 seconds
+Loss: 0.6745823844595388
+Test Accuracy: 0.792
+Train Accuracy: 0.821
+
+Epoch: 78
+Time elapsed: 3226.6841793060303 seconds
+Loss: 0.51734636526577
+Test Accuracy: 0.792
+Train Accuracy: 0.821
+
+Epoch: 79
+Time elapsed: 3246.746495246887 seconds
+Loss: 0.7003956670180668
+Test Accuracy: 0.744
+Train Accuracy: 0.799
+
+Epoch: 79
+Time elapsed: 3266.745595932007 seconds
+Loss: 0.6834969514961577
+Test Accuracy: 0.744
+Train Accuracy: 0.799
+
+Epoch: 80
+Time elapsed: 3287.351142168045 seconds
+Loss: 0.7698836047164376
+Test Accuracy: 0.731
+Train Accuracy: 0.794
+
+Epoch: 80
+Time elapsed: 3307.676957130432 seconds
+Loss: 0.8466293570027132
+Test Accuracy: 0.731
+Train Accuracy: 0.794
+
+Epoch: 81
+Time elapsed: 3327.268068790436 seconds
+Loss: 0.5099425156828401
+Test Accuracy: 0.805
+Train Accuracy: 0.805
+
+Epoch: 81
+Time elapsed: 3347.237808227539 seconds
+Loss: 0.6241601006429205
+Test Accuracy: 0.805
+Train Accuracy: 0.805
+
+Epoch: 81
+Time elapsed: 3367.4465522766113 seconds
+Loss: 0.4547306923096221
+Test Accuracy: 0.805
+Train Accuracy: 0.805
+
+Epoch: 82
+Time elapsed: 3387.744767665863 seconds
+Loss: 0.9665720553091905
+Test Accuracy: 0.816
+Train Accuracy: 0.809
+
+Epoch: 82
+Time elapsed: 3407.2700474262238 seconds
+Loss: 0.39066970962941605
+Test Accuracy: 0.816
+Train Accuracy: 0.809
+
+Epoch: 83
+Time elapsed: 3427.559918642044 seconds
+Loss: 0.5904774442589203
+Test Accuracy: 0.806
+Train Accuracy: 0.796
+
+Epoch: 83
+Time elapsed: 3447.6534628868103 seconds
+Loss: 0.4299375452957973
+Test Accuracy: 0.806
+Train Accuracy: 0.796
+
+Epoch: 84
+Time elapsed: 3467.6397087574005 seconds
+Loss: 0.6595971763268474
+Test Accuracy: 0.802
+Train Accuracy: 0.819
+
+Epoch: 84
+Time elapsed: 3487.7361307144165 seconds
+Loss: 0.5209984359596844
+Test Accuracy: 0.802
+Train Accuracy: 0.819
+
+Epoch: 84
+Time elapsed: 3507.897417783737 seconds
+Loss: 0.6088145789154019
+Test Accuracy: 0.802
+Train Accuracy: 0.819
+
+Epoch: 85
+Time elapsed: 3528.184939622879 seconds
+Loss: 0.31017128400612726
+Test Accuracy: 0.811
+Train Accuracy: 0.822
+
+Epoch: 85
+Time elapsed: 3548.113204717636 seconds
+Loss: 0.9771581204239367
+Test Accuracy: 0.811
+Train Accuracy: 0.822
+
+Epoch: 86
+Time elapsed: 3568.0818116664886 seconds
+Loss: 0.6309587519355941
+Test Accuracy: 0.756
+Train Accuracy: 0.762
+
+Epoch: 86
+Time elapsed: 3588.1656308174133 seconds
+Loss: 0.6312089964890534
+Test Accuracy: 0.756
+Train Accuracy: 0.762
+
+Epoch: 86
+Time elapsed: 3609.1082339286804 seconds
+Loss: 0.4523297215011432
+Test Accuracy: 0.756
+Train Accuracy: 0.762
+
+Epoch: 87
+Time elapsed: 3628.7085752487183 seconds
+Loss: 0.41200820319337866
+Test Accuracy: 0.741
+Train Accuracy: 0.74
+
+Epoch: 87
+Time elapsed: 3648.5983226299286 seconds
+Loss: 0.7090081218481241
+Test Accuracy: 0.741
+Train Accuracy: 0.74
+
+Epoch: 87
+Time elapsed: 3669.450704574585 seconds
+Loss: 0.5865736746583646
+Test Accuracy: 0.741
+Train Accuracy: 0.74
+
+Epoch: 88
+Time elapsed: 3688.7978019714355 seconds
+Loss: 0.7405475365980798
+Test Accuracy: 0.777
+Train Accuracy: 0.777
+
+Epoch: 88
+Time elapsed: 3708.462893009186 seconds
+Loss: 0.7016013686678417
+Test Accuracy: 0.777
+Train Accuracy: 0.777
+
+Epoch: 89
+Time elapsed: 3728.563544988632 seconds
+Loss: 0.6529075760171104
+Test Accuracy: 0.768
+Train Accuracy: 0.801
+
+Epoch: 89
+Time elapsed: 3749.4330627918243 seconds
+Loss: 0.44332846007233856
+Test Accuracy: 0.768
+Train Accuracy: 0.801
+
+Epoch: 89
+Time elapsed: 3769.349691390991 seconds
+Loss: 0.5582270750240674
+Test Accuracy: 0.768
+Train Accuracy: 0.801
+
+Epoch: 90
+Time elapsed: 3789.3118965625763 seconds
+Loss: 0.46621398246876056
+Test Accuracy: 0.804
+Train Accuracy: 0.817
+
+Epoch: 90
+Time elapsed: 3809.657259941101 seconds
+Loss: 0.6507476780434912
+Test Accuracy: 0.804
+Train Accuracy: 0.817
+
+Epoch: 90
+Time elapsed: 3829.5209991931915 seconds
+Loss: 0.5834010880711893
+Test Accuracy: 0.804
+Train Accuracy: 0.817
+
+Epoch: 91
+Time elapsed: 3849.6759684085846 seconds
+Loss: 0.6761123879858992
+Test Accuracy: 0.82
+Train Accuracy: 0.835
+
+Epoch: 91
+Time elapsed: 3869.9413301944733 seconds
+Loss: 0.3361533166078188
+Test Accuracy: 0.82
+Train Accuracy: 0.835
+
+Epoch: 91
+Time elapsed: 3889.9126596450806 seconds
+Loss: 0.7206766669029786
+Test Accuracy: 0.82
+Train Accuracy: 0.835
+
+Epoch: 92
+Time elapsed: 3909.9131898880005 seconds
+Loss: 0.6814134254719703
+Test Accuracy: 0.801
+Train Accuracy: 0.825
+
+Epoch: 92
+Time elapsed: 3930.5649785995483 seconds
+Loss: 0.7342959470739454
+Test Accuracy: 0.801
+Train Accuracy: 0.825
+
+Epoch: 92
+Time elapsed: 3950.293221950531 seconds
+Loss: 0.6534814912988512
+Test Accuracy: 0.801
+Train Accuracy: 0.825
+
+Epoch: 93
+Time elapsed: 3970.5231142044067 seconds
+Loss: 0.6264372495752961
+Test Accuracy: 0.82
+Train Accuracy: 0.827
+
+Epoch: 93
+Time elapsed: 3990.1752548217773 seconds
+Loss: 0.5203252059520045
+Test Accuracy: 0.82
+Train Accuracy: 0.827
+
+Epoch: 93
+Time elapsed: 4010.7091085910797 seconds
+Loss: 0.6224539563458301
+Test Accuracy: 0.82
+Train Accuracy: 0.827
+
+Epoch: 93
+Time elapsed: 4030.6982021331787 seconds
+Loss: 0.5000086396543236
+Test Accuracy: 0.82
+Train Accuracy: 0.827
+
+Epoch: 94
+Time elapsed: 4050.4369218349457 seconds
+Loss: 0.5214291252149174
+Test Accuracy: 0.825
+Train Accuracy: 0.812
+
+Epoch: 94
+Time elapsed: 4070.8389008045197 seconds
+Loss: 0.3945627978840593
+Test Accuracy: 0.825
+Train Accuracy: 0.812
+
+Epoch: 94
+Time elapsed: 4090.875904083252 seconds
+Loss: 0.7495564992742519
+Test Accuracy: 0.825
+Train Accuracy: 0.812
+
+Epoch: 95
+Time elapsed: 4110.814787387848 seconds
+Loss: 0.6464524997374633
+Test Accuracy: 0.792
+Train Accuracy: 0.832
+
+Epoch: 95
+Time elapsed: 4131.098501205444 seconds
+Loss: 0.45708587369155723
+Test Accuracy: 0.792
+Train Accuracy: 0.832
+
+Epoch: 95
+Time elapsed: 4151.297988653183 seconds
+Loss: 0.4395243575665458
+Test Accuracy: 0.792
+Train Accuracy: 0.832
+
+Epoch: 95
+Time elapsed: 4171.6808042526245 seconds
+Loss: 0.6279252277338632
+Test Accuracy: 0.792
+Train Accuracy: 0.832
+
+Epoch: 96
+Time elapsed: 4191.288927555084 seconds
+Loss: 0.7966822615693503
+Test Accuracy: 0.797
+Train Accuracy: 0.806
+
+Epoch: 96
+Time elapsed: 4211.382565021515 seconds
+Loss: 0.4843028548896137
+Test Accuracy: 0.797
+Train Accuracy: 0.806
+
+Epoch: 96
+Time elapsed: 4231.46778345108 seconds
+Loss: 0.4550463049973942
+Test Accuracy: 0.797
+Train Accuracy: 0.806
+
+Epoch: 96
+Time elapsed: 4251.953332424164 seconds
+Loss: 0.4882551780766974
+Test Accuracy: 0.797
+Train Accuracy: 0.806
+
+Epoch: 97
+Time elapsed: 4271.742800712585 seconds
+Loss: 0.3284262587735
+Test Accuracy: 0.805
+Train Accuracy: 0.815
+
+Epoch: 97
+Time elapsed: 4291.767549753189 seconds
+Loss: 0.4876483363706569
+Test Accuracy: 0.805
+Train Accuracy: 0.815
+
+Epoch: 97
+Time elapsed: 4311.957888364792 seconds
+Loss: 0.6542946485425116
+Test Accuracy: 0.805
+Train Accuracy: 0.815
+
+Epoch: 97
+Time elapsed: 4332.305381536484 seconds
+Loss: 0.6592423156807221
+Test Accuracy: 0.805
+Train Accuracy: 0.815
+
+Epoch: 97
+Time elapsed: 4352.260810375214 seconds
+Loss: 0.6765817424865694
+Test Accuracy: 0.805
+Train Accuracy: 0.815
+
+Epoch: 98
+Time elapsed: 4372.732782840729 seconds
+Loss: 0.4963465685490495
+Test Accuracy: 0.833
+Train Accuracy: 0.822
+
+Epoch: 98
+Time elapsed: 4393.18790769577 seconds
+Loss: 0.6841871696508829
+Test Accuracy: 0.833
+Train Accuracy: 0.822
+
+Epoch: 98
+Time elapsed: 4412.407302856445 seconds
+Loss: 0.5157740034122983
+Test Accuracy: 0.833
+Train Accuracy: 0.822
+
+Epoch: 98
+Time elapsed: 4432.550921916962 seconds
+Loss: 0.5294446710034217
+Test Accuracy: 0.833
+Train Accuracy: 0.822
+
+Epoch: 98
+Time elapsed: 4452.821857213974 seconds
+Loss: 0.4434725993438217
+Test Accuracy: 0.833
+Train Accuracy: 0.822
+
+Epoch: 99
+Time elapsed: 4472.503785610199 seconds
+Loss: 0.35349988502163626
+Test Accuracy: 0.835
+Train Accuracy: 0.853
+
+Epoch: 99
+Time elapsed: 4492.749965906143 seconds
+Loss: 0.47884228842525883
+Test Accuracy: 0.835
+Train Accuracy: 0.853
+
+Epoch: 99
+Time elapsed: 4512.954884529114 seconds
+Loss: 0.5597192072172998
+Test Accuracy: 0.835
+Train Accuracy: 0.853
+
+Epoch: 99
+Time elapsed: 4532.776783466339 seconds
+Loss: 0.6571893364863768
+Test Accuracy: 0.835
+Train Accuracy: 0.853
+
+Epoch: 99
+Time elapsed: 4553.186071634293 seconds
+Loss: 0.45683368241992306
+Test Accuracy: 0.835
+Train Accuracy: 0.853
+
+Epoch: 100
+Time elapsed: 4573.039666891098 seconds
+Loss: 0.5969747504594328
+Test Accuracy: 0.817
+Train Accuracy: 0.813
+
+Epoch: 100
+Time elapsed: 4593.248001337051 seconds
+Loss: 0.5340431207805328
+Test Accuracy: 0.817
+Train Accuracy: 0.813
+
+Epoch: 100
+Time elapsed: 4613.355767965317 seconds
+Loss: 0.6012165043669145
+Test Accuracy: 0.817
+Train Accuracy: 0.813
+
+Epoch: 100
+Time elapsed: 4633.32976937294 seconds
+Loss: 0.680814410271728
+Test Accuracy: 0.817
+Train Accuracy: 0.813
+
+Epoch: 100
+Time elapsed: 4653.798803091049 seconds
+Loss: 0.49511534769617177
+Test Accuracy: 0.817
+Train Accuracy: 0.813
+
+Epoch: 100
+Time elapsed: 4673.703858613968 seconds
+Loss: 0.28931992743582075
+Test Accuracy: 0.817
+Train Accuracy: 0.813
+
+Epoch: 101
+Time elapsed: 4694.0239951610565 seconds
+Loss: 0.45853261344359886
+Test Accuracy: 0.789
+Train Accuracy: 0.813
+
+Epoch: 101
+Time elapsed: 4714.010780334473 seconds
+Loss: 0.5879449784702032
+Test Accuracy: 0.789
+Train Accuracy: 0.813
+
+Epoch: 101
+Time elapsed: 4734.13472700119 seconds
+Loss: 0.3999848127432002
+Test Accuracy: 0.789
+Train Accuracy: 0.813
+
+Epoch: 101
+Time elapsed: 4754.092827796936 seconds
+Loss: 0.7432094360260078
+Test Accuracy: 0.789
+Train Accuracy: 0.813
+
+Epoch: 101
+Time elapsed: 4773.932849884033 seconds
+Loss: 0.41476472076017984
+Test Accuracy: 0.789
+Train Accuracy: 0.813
+
+Epoch: 101
+Time elapsed: 4794.072756767273 seconds
+Loss: 0.39333590637916055
+Test Accuracy: 0.789
+Train Accuracy: 0.813
+
+Epoch: 101
+Time elapsed: 4814.276136159897 seconds
+Loss: 0.5510571173476836
+Test Accuracy: 0.789
+Train Accuracy: 0.813
+
+Epoch: 102
+Time elapsed: 4834.41481924057 seconds
+Loss: 0.2814519426133537
+Test Accuracy: 0.832
+Train Accuracy: 0.845
+
+Epoch: 102
+Time elapsed: 4854.341963529587 seconds
+Loss: 0.3892005963149446
+Test Accuracy: 0.832
+Train Accuracy: 0.845
+
+Epoch: 102
+Time elapsed: 4874.782254695892 seconds
+Loss: 0.7533156321423555
+Test Accuracy: 0.832
+Train Accuracy: 0.845
+
+Epoch: 102
+Time elapsed: 4895.177543640137 seconds
+Loss: 0.33297493747375584
+Test Accuracy: 0.832
+Train Accuracy: 0.845
+
+Epoch: 102
+Time elapsed: 4915.298224925995 seconds
+Loss: 0.3253203834290973
+Test Accuracy: 0.832
+Train Accuracy: 0.845
+
+Epoch: 102
+Time elapsed: 4935.03428196907 seconds
+Loss: 0.3690460837569523
+Test Accuracy: 0.832
+Train Accuracy: 0.845
+
+Epoch: 102
+Time elapsed: 4955.192838907242 seconds
+Loss: 0.47332932565785263
+Test Accuracy: 0.832
+Train Accuracy: 0.845
+
+Epoch: 102
+Time elapsed: 4975.675865650177 seconds
+Loss: 0.402356269609744
+Test Accuracy: 0.832
+Train Accuracy: 0.845
+
+Epoch: 102
+Time elapsed: 4995.126441240311 seconds
+Loss: 0.9212838699617047
+Test Accuracy: 0.832
+Train Accuracy: 0.845
+
+Epoch: 102
+Time elapsed: 5015.453554391861 seconds
+Loss: 0.5110906528293133
+Test Accuracy: 0.832
+Train Accuracy: 0.845
+
+Epoch: 103
+Time elapsed: 5035.458588600159 seconds
+Loss: 0.7184939864154529
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5056.091670513153 seconds
+Loss: 0.397091271191007
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5075.843506097794 seconds
+Loss: 0.6709460275984935
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5096.408769130707 seconds
+Loss: 0.6610163076712542
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5116.198901414871 seconds
+Loss: 0.6785787544412851
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5136.655263900757 seconds
+Loss: 0.6138164781827306
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5156.5522537231445 seconds
+Loss: 0.614117090254202
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5176.860716819763 seconds
+Loss: 0.5678683657832632
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5196.761764764786 seconds
+Loss: 0.3005717562267743
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5216.737599372864 seconds
+Loss: 0.5779222041616792
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5236.687686681747 seconds
+Loss: 0.5373665478603883
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5256.8912961483 seconds
+Loss: 0.6795737710384312
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5276.909726858139 seconds
+Loss: 0.5243700407787513
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5296.880658626556 seconds
+Loss: 0.5866083683598139
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5317.0485026836395 seconds
+Loss: 0.5218309279794373
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5337.1767578125 seconds
+Loss: 0.6495359523857148
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5357.441555976868 seconds
+Loss: 0.6962100239627754
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5377.669765949249 seconds
+Loss: 0.5511126400660636
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5397.981608629227 seconds
+Loss: 0.3009409720798843
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5418.512311697006 seconds
+Loss: 0.3607963285156345
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5438.91362953186 seconds
+Loss: 0.3927693245907941
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5459.418730258942 seconds
+Loss: 0.39842898949475464
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5480.01860499382 seconds
+Loss: 0.5127766103952616
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5500.898485183716 seconds
+Loss: 0.5533326372843246
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5521.71782708168 seconds
+Loss: 0.6521694075007416
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5542.326217889786 seconds
+Loss: 0.4734671892852154
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5563.170881986618 seconds
+Loss: 0.4560560044825147
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5583.963495492935 seconds
+Loss: 0.23410108660967255
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5604.987404584885 seconds
+Loss: 0.5098806805078894
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5626.310791254044 seconds
+Loss: 0.36109561441182625
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5647.38734793663 seconds
+Loss: 0.4404297393298712
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5668.699004411697 seconds
+Loss: 0.5706355867634941
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5690.333693742752 seconds
+Loss: 0.5162296870692602
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5711.892845392227 seconds
+Loss: 0.5557655589472865
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5733.372222185135 seconds
+Loss: 0.9274326028472339
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5754.720645666122 seconds
+Loss: 0.608318421794293
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5776.173402309418 seconds
+Loss: 0.3074778177375389
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5797.681306362152 seconds
+Loss: 0.5464262666522095
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5819.295413017273 seconds
+Loss: 0.39638578262461044
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5841.003961324692 seconds
+Loss: 0.46594488268363443
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5862.804705858231 seconds
+Loss: 0.6570243137651811
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5884.7356605529785 seconds
+Loss: 0.43432285482470884
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5906.736356496811 seconds
+Loss: 0.4812845348367247
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5928.933602809906 seconds
+Loss: 0.7666385956332041
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5951.089382410049 seconds
+Loss: 0.45681761861456677
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5973.537327528 seconds
+Loss: 0.7087317260017428
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 5995.968457937241 seconds
+Loss: 0.529834377114512
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6018.815340518951 seconds
+Loss: 0.7913995929874618
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6041.151743888855 seconds
+Loss: 0.3711501454848732
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6063.924398899078 seconds
+Loss: 0.293097031898135
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6086.547414779663 seconds
+Loss: 0.44021373374499034
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6109.524738788605 seconds
+Loss: 0.6899485721764951
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6132.412314891815 seconds
+Loss: 0.5184718171541554
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6154.883338689804 seconds
+Loss: 0.7518971915404982
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6177.762392044067 seconds
+Loss: 0.7021536499184614
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6200.624373435974 seconds
+Loss: 0.337357744685663
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6223.97328710556 seconds
+Loss: 0.4422793087903706
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6247.167646408081 seconds
+Loss: 0.5424286854343856
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6270.20395565033 seconds
+Loss: 0.7418546407362672
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6293.792994737625 seconds
+Loss: 0.5774472694038674
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6317.450453042984 seconds
+Loss: 0.4786032745549021
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6341.265208244324 seconds
+Loss: 0.42493711583117855
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6365.0663414001465 seconds
+Loss: 0.2838321031647386
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6389.0588092803955 seconds
+Loss: 0.5184280171887172
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6413.284480333328 seconds
+Loss: 0.8611097282182834
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6437.35701417923 seconds
+Loss: 0.4798186980410764
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6461.64223408699 seconds
+Loss: 0.4939256192699623
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6485.9325358867645 seconds
+Loss: 0.4070917481912041
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6510.493179559708 seconds
+Loss: 0.4087953513052311
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6535.015750169754 seconds
+Loss: 0.479075797564225
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6560.073471069336 seconds
+Loss: 0.7318764234193142
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6584.592445611954 seconds
+Loss: 0.6286815589496616
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6609.701132535934 seconds
+Loss: 0.5479363946438507
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6634.549247980118 seconds
+Loss: 0.6082022029670408
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6660.026540994644 seconds
+Loss: 0.47976948903888894
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6684.984108448029 seconds
+Loss: 0.5883702366610748
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6709.944833278656 seconds
+Loss: 0.5651337175116676
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6736.061227321625 seconds
+Loss: 0.4075371505887844
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6761.565175771713 seconds
+Loss: 0.6835190679052313
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6786.871551036835 seconds
+Loss: 0.5328839564543492
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6812.706889867783 seconds
+Loss: 0.5126778758827079
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6838.743118286133 seconds
+Loss: 0.7519322871416436
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6864.348716974258 seconds
+Loss: 0.4995573561732576
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6890.352127075195 seconds
+Loss: 0.4710196221825466
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6915.665079832077 seconds
+Loss: 0.34638083671064895
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6941.566023111343 seconds
+Loss: 0.46354953642452074
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6967.677400588989 seconds
+Loss: 0.5666276829444097
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 6993.511032581329 seconds
+Loss: 0.4045522995498224
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7020.162974834442 seconds
+Loss: 0.5480802470883108
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7046.115269422531 seconds
+Loss: 0.6798145041648174
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7072.729036808014 seconds
+Loss: 0.600960111237909
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7099.02357172966 seconds
+Loss: 0.4959911809492146
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7125.431201219559 seconds
+Loss: 0.5537306910405021
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7151.847986698151 seconds
+Loss: 0.7710617019756377
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7178.563473701477 seconds
+Loss: 0.38936897238082485
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7204.914956569672 seconds
+Loss: 0.8303736659151513
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7231.949262857437 seconds
+Loss: 0.5126782365330793
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7259.147943496704 seconds
+Loss: 0.5762236282755103
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7285.702716588974 seconds
+Loss: 0.5022424665420048
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7311.329295158386 seconds
+Loss: 0.3516127126185415
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7337.177533626556 seconds
+Loss: 0.4634641651562623
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7363.017743587494 seconds
+Loss: 0.40857757959422275
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7388.651790142059 seconds
+Loss: 0.6506452170855009
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
+Epoch: 103
+Time elapsed: 7414.427528381348 seconds
+Loss: 0.7789573777714608
+Test Accuracy: 0.804
+Train Accuracy: 0.85
+
