@@ -30,6 +30,18 @@ def relu(x): #Rectified Linear Unit
 def relu_d(x):
     return np.array([1 if i > 0 else 0 for i in x])
 
+def lrelu(x): #Leaky RELU
+    return np.array([max(0.01*x_i,x_i) for x_i in x])
+
+def lrelu_d(x):
+    return np.array([1 if i > 0 else 0.01 for i in x])
+
+def tanh(x): # Tanh function
+    return np.array([numpy.tanh(x_i) for x_i in x])
+
+def tanh_d(x):
+    return np.array([(1- numpy.tanh(x_i)*numpy.tanh(x_i)) for x_i in x])
+
 class BackPropagation:
 
     # The network shape list describes the number of units in each
