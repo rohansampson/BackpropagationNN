@@ -170,9 +170,9 @@ class BackPropagation:
         """
 
         # Overwrite
-        batch_size=50
+        batch_size=5
         epsilon=0.01
-        epochs=1000
+        epochs=150
 
         # Compute the number of training examples and number of mini-batches.
         N = min(len(self.trainX), len(self.trainY))
